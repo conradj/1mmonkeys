@@ -52,6 +52,156 @@
                 padding: 100px 300px 20px 300px;
             }
 
+            a {
+                position: relative;
+                display: inline-block;
+                /*margin: 15px 25px;*/
+                outline: none;
+                color: rgb(255, 255, 255);
+                color: rgba(255, 255, 255, 0.7);
+                text-decoration: none;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-weight: 400;
+                text-shadow: 0 0 1px rgba(255,255,255,0.3);
+                /*font-size: 0.35em;*/
+            }
+
+            .negative a {
+                color: rgb(0, 0, 0);
+                color: rgba(0, 0, 0, 0.7);
+                text-shadow: 0 0 1px rgba(0,0,0,0.3);
+            }
+
+            a:hover,
+            a:focus {
+                outline: none;
+            }
+
+            a span:first-child {
+                z-index: 2;
+                display: block;
+                font-weight: 300;
+            }
+
+            a span:last-child {
+                z-index: 1;
+                display: block;
+                padding: 8px 0 0 0;
+                color: rgba(255,255,255,0.4);
+                text-shadow: none;
+                text-transform: none;
+                font-style: italic;
+                font-size: 0.75em;
+                font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+                opacity: 0;
+                -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+                -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+                transition: transform 0.3s, opacity 0.3s;
+                -webkit-transform: translateY(-100%);
+                -moz-transform: translateY(-100%);
+                transform: translateY(-100%);
+            }
+
+            .negative a span:last-child {
+                color: rgba(0,0,0,0.4);
+            }
+
+            a:hover::before,
+            a:focus::before {
+                height: 6px;
+            }
+
+            a:hover::before,
+            a:hover::after,
+            a:focus::before,
+            a:focus::after {
+                opacity: 1;
+                -webkit-transform: translateY(0px);
+                -moz-transform: translateY(0px);
+                transform: translateY(0px);
+            }
+
+            a:hover span:last-child,
+            a:focus span:last-child {
+                opacity: 1;
+                -webkit-transform: translateY(0%);
+                -moz-transform: translateY(0%);
+                transform: translateY(0%);
+            }
+
+            a {
+                padding: 10px;
+                /*color: rgb(255, 255, 255);
+                color: rgba(255, 255, 255, 0.7);*/
+                font-weight: 700;
+                text-shadow: none;
+                -webkit-transition: color 0.3s;
+                -moz-transition: color 0.3s;
+                transition: color 0.3s;
+            }
+
+            a::before,
+            a::after {
+                position: absolute;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background: #fff;
+                content: '';
+                opacity: 0;
+                -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+                -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+                transition: opacity 0.3s, transform 0.3s;
+                -webkit-transform: translateY(-10px);
+                -moz-transform: translateY(-10px);
+                transform: translateY(-10px);
+            }
+
+            .negative a::before,
+            .negative a::after {
+                background: rgb(0,0,0);
+            }
+
+            a::before {
+                top: 0;
+                -webkit-transform: translateY(-10px);
+                -moz-transform: translateY(-10px);
+                transform: translateY(-10px);
+            }
+
+            a::after {
+                bottom: 0;
+                -webkit-transform: translateY(10px);
+                -moz-transform: translateY(10px);
+                transform: translateY(10px);
+            }
+
+            a:hover,
+            a:focus {
+                color: #fff;
+            }
+
+            .negative a:hover,
+            .negative a:focus {
+                color: rgb(0,0,0);
+            }
+
+            a:hover::before,
+            a:focus::before,
+            a:hover::after,
+            a:focus::after {
+                opacity: 1;
+                -webkit-transform: translateY(0px);
+                -moz-transform: translateY(0px);
+                transform: translateY(0px);
+            }
+
+
+            .social {
+                /*margin-top: -200px;*/
+
+            }
             
         </style> 
          <script>
@@ -59,8 +209,20 @@
         </script>
     </head>
     <body>
+        <nav class="cl-effect-21 negative">
+                <a id='rotateBG'><span>I carnt see</span><span>Change background</span></a>
+            </nav>
         <div class="container">
-            <section class='ctaBig'>my mind HAS GONE blank</section>
+            <section class='ctaBig'>MY MIND HAS GONE blank</section>
+            <section class='social'>
+                <nav class="cl-effect-21">
+                    <a href='https://www.twitter.com/conradj' target='_blank'><span>twitter</span><span>Random witterings</span></a>
+                    <a href='https://www.linkedin.com/in/conradsjackson' target='_blank'><span>linkedin</span><span>Professional Front</span></a>
+                    <a href='https://github.com/conradj' target='_blank'><span>github</span><span>Code dossing</span></a>
+                    <a href='https://www.facebook.com/conradsjackson' target='_blank' title='ick'><span>facebook</span><span>virtual persona</span></a>
+                    <a href='https://plus.google.com/u/0/+ConradJackson1' target='_blank' title='whyyyyyy?'><span>google+</span><span>Temporal Deadzone</span></a>
+                </nav>
+            </section>
             <section class='Projects'>
                 <h1>Projects (and completion %age)</h1>
                 <ol>
@@ -68,7 +230,7 @@
                     <li>Property Manager <span class='completed'>20%-100%</span></li>
                     <li>Sonoserous <span class='completed'>20%-100%</span></li>
                     <li>IoT Thing <span class='completed'>20%-100%</span></li>
-                    <li>Matildann <span class='completed'>100%</span></li>
+                    <li><a href='http://matildann.azurewebsites.net' target='_blank'><span>Matildann</span><span>Bubbles</span></a> <span class='completed'>100%</span></li>
                     <li>Totterup <span class='completed'>100%</span></li>
                     <li>Pocket Weekly Reads <span class='completed'>100%</span></li>
                     
@@ -160,7 +322,6 @@
             <section>
                 <iframe width="500" height="500" src="https://www.youtube.com/embed/sZ5nEuG-CRc?autoplay=1&start=0" frameborder="0" allowfullscreen></iframe>
                 <iframe width="500" height="500" src="https://www.youtube.com/embed/sZ5nEuG-CRc?autoplay=1&start=1" frameborder="0" allowfullscreen></iframe>
-                <marquee>If the music makes you feel uneasy it might be because the track is repeated 1 second behind. I am inordinately proud of discovering this. Also, google "Marqee Tag" for a little web developer laugh</marquee>
                 <!--<canvas id="music-for-airports" width="1000" height="1000" style="width: 800px; height: 800px;"></canvas>
                 <script src="https://cdn.rawgit.com/mohayonao/web-audio-api-shim/master/build/web-audio-api-shim.min.js"></script>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/1.0.0/fetch.min.js"></script>
@@ -168,6 +329,8 @@
                 <script src="musicforairports.js"></script>-->
             </section>
         </div>
+        <marquee>If the music makes you feel uneasy it might be because the track is syncronised 1 second apart. I am inordinately proud of discovering this effect. It might also be because the track is called "Remurdered". Lastly, if you need a little web developer laugh then google "Marqee Tag"...</marquee>
+                
         <script>
             var randomBackground = () => {
 

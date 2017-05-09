@@ -1,0 +1,52 @@
+section {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.bg1 {
+    /*aurora*/
+    background-image: url(https://68.media.tumblr.com/b916e3e47f2aed1e658d0e32b72c8f26/tumblr_onfsuhz8hS1upvbufo1_540.gif);
+}
+.bg2 {
+    /*blinking*/
+    background-image: url(http://68.media.tumblr.com/a1e0142822cecb0279d523cee372839c/tumblr_o8ogtlzQFp1qghl49o1_540.gif);
+}
+.bg3 {
+    /*rain*/
+    background-image: url(http://68.media.tumblr.com/d3b64babe4a5b43a4d90e026c1a6e611/tumblr_ohf6peHnnk1qghl49o1_540.gif);
+}
+.bg4 {
+    /*finger*/
+    background-image: url(http://68.media.tumblr.com/tumblr_ldn0pfF8Se1qe0eclo1_r2_500.gif);
+}
+.bg5 {
+    /*city*/
+    background-image: url(http://68.media.tumblr.com/tumblr_lfl8geyjXg1qe0eclo1_r6_500.gif);
+}
+
+.bg6 {
+    /*1984*/
+    background-image: url(http://68.media.tumblr.com/03bd68e791029d01e508f765c414adaf/tumblr_lsw8oby7NO1qe0eclo1_r7_500.gif);
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.bg7 {
+    /*sunset sea*/
+    background-image: url(https://68.media.tumblr.com/562dd4987288b91b1ce1db6d77b07069/tumblr_omiety22G61upvbufo1_540.gif);
+}
+
+.bg8 {
+    /*moonlit sea*/
+    background-image: url(https://68.media.tumblr.com/9b92a0a14f3f9eb46439567c5cecec1f/tumblr_okk8yjBn9b1upvbufo1_r2_540.gif);
+}
+
+.bg9 {
+    /*rain lights*/
+    background-image: url(https://livingstills.tumblr.com/post/155910476317);
+}
+
+.bigMoon {
+    background-image: url(https://68.media.tumblr.com/8dd62f9d2f6b9e242011fc8479a74a90/tumblr_ol2lkeNiYm1upvbufo1_r1_1280.gif);
+}

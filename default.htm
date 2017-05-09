@@ -3,338 +3,179 @@
         <title>999,999 monkeys typing</title>
         <style>
             @import url('https://fonts.googleapis.com/css?family=Cousine:700');
-
-            * {
-                margin: 0;
-                padding: 0;
-            }
-            
-            html { 
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center center;
-                background-attachment: fixed;
-            }
-
-            .bg1 {
-                /*aurora*/
-                background-image: url(https://68.media.tumblr.com/b916e3e47f2aed1e658d0e32b72c8f26/tumblr_onfsuhz8hS1upvbufo1_540.gif);
-            }
-            .bg2 {
-                /*blinking*/
-                background-image: url(http://68.media.tumblr.com/a1e0142822cecb0279d523cee372839c/tumblr_o8ogtlzQFp1qghl49o1_540.gif);
-            }
-            .bg3 {
-                /*rain*/
-                background-image: url(http://68.media.tumblr.com/d3b64babe4a5b43a4d90e026c1a6e611/tumblr_ohf6peHnnk1qghl49o1_540.gif);
-            }
-            .bg4 {
-                /*finger*/
-                background-image: url(http://68.media.tumblr.com/tumblr_ldn0pfF8Se1qe0eclo1_r2_500.gif);
-            }
-            .bg5 {
-                /*city*/
-                background-image: url(http://68.media.tumblr.com/tumblr_lfl8geyjXg1qe0eclo1_r6_500.gif);
-            }
-            
-            .bg6 {
-                /*1984*/
-                background-image: url(http://68.media.tumblr.com/03bd68e791029d01e508f765c414adaf/tumblr_lsw8oby7NO1qe0eclo1_r7_500.gif);
-                color: rgba(0, 0, 0, 0.5);
-            }
-            
-            .container {
-                overflow-x: hidden;
-                color: rgb(255, 255, 255);
-                color: rgba(255, 255, 255, 0.7);
-                font-family: 'Cousine', monospace;
-                font-size: 36px;
-                padding: 100px 300px 20px 300px;
-            }
-
-            a {
-                position: relative;
-                display: inline-block;
-                /*margin: 15px 25px;*/
-                outline: none;
-                color: rgb(255, 255, 255);
-                color: rgba(255, 255, 255, 0.7);
-                text-decoration: none;
-                text-transform: uppercase;
-                letter-spacing: 1px;
-                font-weight: 400;
-                text-shadow: 0 0 1px rgba(255,255,255,0.3);
-                /*font-size: 0.35em;*/
-            }
-
-            .negative a {
-                color: rgb(0, 0, 0);
-                color: rgba(0, 0, 0, 0.7);
-                text-shadow: 0 0 1px rgba(0,0,0,0.3);
-            }
-
-            a:hover,
-            a:focus {
-                outline: none;
-            }
-
-            a span:first-child {
-                z-index: 2;
-                display: block;
-                font-weight: 300;
-            }
-
-            a span:last-child {
-                z-index: 1;
-                display: block;
-                padding: 8px 0 0 0;
-                color: rgba(255,255,255,0.4);
-                text-shadow: none;
-                text-transform: none;
-                font-style: italic;
-                font-size: 0.75em;
-                font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-                opacity: 0;
-                -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-                -moz-transition: -moz-transform 0.3s, opacity 0.3s;
-                transition: transform 0.3s, opacity 0.3s;
-                -webkit-transform: translateY(-100%);
-                -moz-transform: translateY(-100%);
-                transform: translateY(-100%);
-            }
-
-            .negative a span:last-child {
-                color: rgba(0,0,0,0.4);
-            }
-
-            a:hover::before,
-            a:focus::before {
-                height: 6px;
-            }
-
-            a:hover::before,
-            a:hover::after,
-            a:focus::before,
-            a:focus::after {
-                opacity: 1;
-                -webkit-transform: translateY(0px);
-                -moz-transform: translateY(0px);
-                transform: translateY(0px);
-            }
-
-            a:hover span:last-child,
-            a:focus span:last-child {
-                opacity: 1;
-                -webkit-transform: translateY(0%);
-                -moz-transform: translateY(0%);
-                transform: translateY(0%);
-            }
-
-            a {
-                padding: 10px;
-                /*color: rgb(255, 255, 255);
-                color: rgba(255, 255, 255, 0.7);*/
-                font-weight: 700;
-                text-shadow: none;
-                -webkit-transition: color 0.3s;
-                -moz-transition: color 0.3s;
-                transition: color 0.3s;
-            }
-
-            a::before,
-            a::after {
-                position: absolute;
-                left: 0;
-                width: 100%;
-                height: 2px;
-                background: #fff;
-                content: '';
-                opacity: 0;
-                -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-                -moz-transition: opacity 0.3s, -moz-transform 0.3s;
-                transition: opacity 0.3s, transform 0.3s;
-                -webkit-transform: translateY(-10px);
-                -moz-transform: translateY(-10px);
-                transform: translateY(-10px);
-            }
-
-            .negative a::before,
-            .negative a::after {
-                background: rgb(0,0,0);
-            }
-
-            a::before {
-                top: 0;
-                -webkit-transform: translateY(-10px);
-                -moz-transform: translateY(-10px);
-                transform: translateY(-10px);
-            }
-
-            a::after {
-                bottom: 0;
-                -webkit-transform: translateY(10px);
-                -moz-transform: translateY(10px);
-                transform: translateY(10px);
-            }
-
-            a:hover,
-            a:focus {
-                color: #fff;
-            }
-
-            .negative a:hover,
-            .negative a:focus {
-                color: rgb(0,0,0);
-            }
-
-            a:hover::before,
-            a:focus::before,
-            a:hover::after,
-            a:focus::after {
-                opacity: 1;
-                -webkit-transform: translateY(0px);
-                -moz-transform: translateY(0px);
-                transform: translateY(0px);
-            }
-
-
-            .social {
-                /*margin-top: -200px;*/
-
-            }
-            
-        </style> 
-         <script>
-            
-        </script>
+        </style>
+        <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+        <link rel="stylesheet" type="text/css" href="styles/backgrounds.css" />
+		<link rel="stylesheet" type="text/css" href="styles/links.css" />
     </head>
     <body>
-        <nav class="cl-effect-21 negative">
+        <!--<nav class="cl-effect-21 negative">
                 <a id='rotateBG'><span>I carnt see</span><span>Change background</span></a>
-            </nav>
-        <div class="container">
-            <section class='ctaBig'>MY MIND HAS GONE blank</section>
-            <section class='social'>
-                <nav class="cl-effect-21">
-                    <a href='https://www.twitter.com/conradj' target='_blank'><span>twitter</span><span>Random witterings</span></a>
-                    <a href='https://www.linkedin.com/in/conradsjackson' target='_blank'><span>linkedin</span><span>Professional Front</span></a>
-                    <a href='https://github.com/conradj' target='_blank'><span>github</span><span>Code dossing</span></a>
-                    <a href='https://www.facebook.com/conradsjackson' target='_blank' title='ick'><span>facebook</span><span>virtual persona</span></a>
-                    <a href='https://plus.google.com/u/0/+ConradJackson1' target='_blank' title='whyyyyyy?'><span>google+</span><span>Temporal Deadzone</span></a>
-                </nav>
+            </nav>-->
+        <div class="container">            
+            <section class='bg2 social'>
+                <div class='content'>
+                    <nav class="cl-effect-21">
+                        <a href='https://www.twitter.com/conradj' target='_blank'><span>twitter</span><span>Random witterings</span></a>
+                        <a href='https://www.linkedin.com/in/conradsjackson' target='_blank'><span>linkedin</span><span>Professional Front</span></a>
+                        <a href='https://github.com/conradj' target='_blank'><span>github</span><span>Code dossing</span></a>
+                        <a href='https://www.facebook.com/conradsjackson' target='_blank' title='ick'><span>facebook</span><span>virtual persona</span></a>
+                        <a href='https://plus.google.com/u/0/+ConradJackson1' target='_blank' title='whyyyyyy?'><span>google+</span><span>Temporal Deadzone</span></a>
+                    </nav>
+                </div>
             </section>
-            <section class='Projects'>
-                <h1>Projects (and completion %age)</h1>
-                <ol>
-                    <li>This website <span class='completed'>20%-100%</span></li>
-                    <li>Property Manager <span class='completed'>20%-100%</span></li>
-                    <li>Sonoserous <span class='completed'>20%-100%</span></li>
-                    <li>IoT Thing <span class='completed'>20%-100%</span></li>
-                    <li><a href='http://matildann.azurewebsites.net' target='_blank'><span>Matildann</span><span>Bubbles</span></a> <span class='completed'>100%</span></li>
-                    <li>Totterup <span class='completed'>100%</span></li>
-                    <li>Pocket Weekly Reads <span class='completed'>100%</span></li>
-                    
-                    <li>Smartthings app to tell you if your train is late<span class='completed'>100%</span></li>
-                    <li>Travel a bit <span class='completed'>20-100%</span></li>
-                    <li>get a job <span class='completed'>20-100%</span></li>
-                    <li>Live in a house <span class='completed'>100%</span></li>
-                    <li>with someone amazing <span class='completed'>100%</span></li>
-                    <li>and a cute little kid <span class='completed'>100%</span></li>
-                    <li>Ride bikes together<span class='completed'>100%</span></li>
-                </ol>
+            <section class='Projects bg3'>
+                <div class='content'>
+                    <h1>Projects (and completion %age)</h1>
+                    <ol>
+                        <li>This website <span class='completed'>20%-100%</span></li>
+                        <li>Property Manager <span class='completed'>20%-100%</span></li>
+                        <li>Sonoserous <span class='completed'>20%-100%</span></li>
+                        <li>IoT Thing <span class='completed'>20%-100%</span></li>
+                        <li><a href='http://matildann.azurewebsites.net' target='_blank'><span>Matildann</span><span>Bubbles</span></a> <span class='completed'>100%</span></li>
+                        <li>Totterup <span class='completed'>100%</span></li>
+                        <li>Pocket Weekly Reads <span class='completed'>100%</span></li>
+                        
+                        <li>Smartthings app to tell you if your train is late<span class='completed'>100%</span></li>
+                        <li>Travel a bit <span class='completed'>20-100%</span></li>
+                        <li>get a job <span class='completed'>20-100%</span></li>
+                        <li>Live in a house <span class='completed'>100%</span></li>
+                        <li>with someone amazing <span class='completed'>100%</span></li>
+                        <li>and a cute little kid <span class='completed'>100%</span></li>
+                        <li>Ride bikes together<span class='completed'>100%</span></li>
+                    </ol>
+                </div>
             </section>
-            <section class='Ideas'>
-                <h1>Ideas (as yet unstarted)</h1>
-                <ol>
-                    <li>Reverse Kickstarter (people pledge money against your idea until someone says they will take the money and do it)</li>
-                    <li>Some sort of thing to save the news</li>
-                    <li>Some sort of thing that saves democracy</li>
-                    <li>Some sort of thing that improves social mobility (OutsideIn.com)</li>
-                    <li>Real time Ambient music stream generated from your activities from web usage, wearables and IoT sensors</li>
-                    <li>Taxi share</li>
-                    <li>Bad driving app</li>
-                    <li>Personal proximity warner</li>
-                    <li>Vege friendly meat, replace meat with cheese</li>
-                    <li>Cat TV box replace ball</li>
-                    <li>Music Festival chooser</li>
-                    <li>AR Running App (chase the sandwich)</li>
-                    <li>Road bumps that play a tune if you go over them slowly enough</li>
-                    <li>Tin foil clothing brand to protect you from Wifi/Kinect</li>
-                    <li>Toothbrush that changes from grey to a nice bright colour when wet and then back as it dries out. Try and keep the colour by brushing your teeth regularly. Also reminds you if you brushed your teeth this morning or not (I forget).</li>
-                    <li>An image serving site where you could specify the subject matter, type and size of image: <img url=”http://pictopics.com/happycat/icon/16/16” /> </li>
-                    <li>IoT automation routines generated via machine learning</li>
-                </ol>
+            <section class='Ideas bg1'>
+                <div class='content'>
+                    <h1>Ideas (as yet unstarted)</h1>
+                    <ol>
+                        <li>Reverse Kickstarter (people pledge money against your idea until someone says they will take the money and do it)</li>
+                        <li>Some sort of thing to save the news</li>
+                        <li>Some sort of thing that saves democracy</li>
+                        <li>Some sort of thing that improves social mobility (OutsideIn.com)</li>
+                        <li>Real time Ambient music stream generated from your activities from web usage, wearables and IoT sensors</li>
+                        <li>Taxi share</li>
+                        <li>Bad driving app</li>
+                        <li>Personal proximity warner</li>
+                        <li>Vege friendly meat, replace meat with cheese</li>
+                        <li>Cat TV box replace ball</li>
+                        <li>Music Festival chooser</li>
+                        <li>AR Running App (chase the sandwich)</li>
+                        <li>Road bumps that play a tune if you go over them slowly enough</li>
+                        <li>Tin foil clothing brand to protect you from Wifi/Kinect</li>
+                        <li>Toothbrush that changes from grey to a nice bright colour when wet and then back as it dries out. Try and keep the colour by brushing your teeth regularly. Also reminds you if you brushed your teeth this morning or not (I forget).</li>
+                        <li>An image serving site where you could specify the subject matter, type and size of image: <img url=”http://pictopics.com/happycat/icon/16/16” /> </li>
+                        <li>IoT automation routines generated via machine learning</li>
+                    </ol>
+                </div>
             </section>
-            <section class='Likes'>
-                <h1>things I like</h1>
-                <ul>
-                    <li>Trello</li>
-                    <li>Workflowy</li>
-                    <li>Pocket</li>
-                    <li>Sonos</li>
-                    <li>Cotic</li>
-                    <li>Brushing your teeth twice a day</li>
-                </ul>
-                <h1>THE HORRIFIC FACEBOOK CONSPIRACY ///TODO format this</h1>
-                <div>https://www.washingtonpost.com/news/the-intersect/wp/2016/08/19/98-personal-data-points-that-facebook-uses-to-target-ads-to-you/
+            <section class='Likes bg5'>
+                <div class='content'>
+                    <h1>things I like</h1>
+                    <ul>
+                        <li>Trello</li>
+                        <li>Workflowy</li>
+                        <li>Pocket</li>
+                        <li>Sonos</li>
+                        <li>Cotic</li>
+                        <li>Brushing your teeth twice a day</li>
+                    </ul>
+                </div>
+            </section>
+            <section class='bg7'>
+                <div class='content'>
+                    <h1>currently trying out:</h1>
+                    <ul>
+                        <li>Firefox (great for browsing, crap for dev!)</li>
+                        <li>Zapier</li>
+                        <li>Monzo</li>
+                    </ul>
+                    <h2>Smart/Wifi enabled:</h2>
+                    <ul>
+                        <li>Light bulbs</li>
+                        <li>Power sockets</li>
+                        <li>Motion sensors</li>
+                        <li>Switches</li>
+                        <li>Scales</li>
+                        <li>Speakers</li>
+                        <li>Watch</li>
+                    </ul>
+                </div>
+            </section>
+            <section class='bg8'>
+                <div class='content'>
+                    <h1>Attribution</h1>
+                    <ul>
+                        <li><a href='http://technoir.nl/' target='_blank'><span>Movie Backgrounds</span><span>Tech Noir</span></a></li>
+                        <li><a href='https://livingstills.tumblr.com/' target='_blank'>Nature backgrounds<span></span><span>Living stills</span></a></li>
+                    </ul>
+                </div>
+            </section>
+            <!--<section class='facebook bg7'>
+                <div class='content'>
+                    <h1>THE HORRIFIC FACEBOOK CONSPIRACY ///TODO format this</h1>
+                    <div>https://www.washingtonpost.com/news/the-intersect/wp/2016/08/19/98-personal-data-points-that-facebook-uses-to-target-ads-to-you/
 
-        What else do they (probably) know about that they don't tell us?
-            Recent Bereavements
-                Who it was
-            Number of affairs
-                Online only
-            Misogyny level
-            Isms
-            Unhappily...
-                Married
-                Employed
-                Parenting
-            Personal hygiene
-            Environmental hygiene (how clean their house is)
-            CO2 footprint
-            Criminal record
-            Number of real friends
-            Average time in browser
-                Spent on facebook
-                Other social media
-                E-commerce
-                    By category
-                Adult sites
-                    By keyword
-            Number of times they've found something on Amazon and compared the price on other retailers
-                Amount more expensive it has to be on Amazon Prime for them to purchase with different retailer
-            Likely usernames and passwords
-            Number of sentences typed per submitted sentences
-            Preferred social media personality (perky, aloof, pro, bro, earth mother, drunk mother)
-            Ratio of seen charity sponsorship posts to donations
-            Average donation to charity
-            Salary
-            Amount spent on alcohol
-            Risk score based on the sum of minutes of (higher score = lower risk):
-                Time before deadline taxes were submitted, 
-                Time before deadline vehicle tax purchased
-                Average time before flight that they do online check-in
-                Average time before holiday they purchased holiday insurance
-                Likely amount of time spent browsing in incognito mode
-                Amount of time computer+phone is inactive and unlocked
-            Full contents of clipboard history</div>
-            </section>
-            <section>
-                <iframe width="500" height="500" src="https://www.youtube.com/embed/sZ5nEuG-CRc?autoplay=1&start=0" frameborder="0" allowfullscreen></iframe>
-                <iframe width="500" height="500" src="https://www.youtube.com/embed/sZ5nEuG-CRc?autoplay=1&start=1" frameborder="0" allowfullscreen></iframe>
+            What else do they (probably) know about that they don't tell us?
+                Recent Bereavements
+                    Who it was
+                Number of affairs
+                    Online only
+                Misogyny level
+                Isms
+                Unhappily...
+                    Married
+                    Employed
+                    Parenting
+                Personal hygiene
+                Environmental hygiene (how clean their house is)
+                CO2 footprint
+                Criminal record
+                Number of real friends
+                Average time in browser
+                    Spent on facebook
+                    Other social media
+                    E-commerce
+                        By category
+                    Adult sites
+                        By keyword
+                Number of times they've found something on Amazon and compared the price on other retailers
+                    Amount more expensive it has to be on Amazon Prime for them to purchase with different retailer
+                Likely usernames and passwords
+                Number of sentences typed per submitted sentences
+                Preferred social media personality (perky, aloof, pro, bro, earth mother, drunk mother)
+                Ratio of seen charity sponsorship posts to donations
+                Average donation to charity
+                Salary
+                Amount spent on alcohol
+                Risk score based on the sum of minutes of (higher score = lower risk):
+                    Time before deadline taxes were submitted, 
+                    Time before deadline vehicle tax purchased
+                    Average time before flight that they do online check-in
+                    Average time before holiday they purchased holiday insurance
+                    Likely amount of time spent browsing in incognito mode
+                    Amount of time computer+phone is inactive and unlocked
+                Full contents of clipboard history</div>
+                </div>
+            </section>-->
+            <!--<section>
+                <<iframe width="500" height="500" src="https://www.youtube.com/embed/sZ5nEuG-CRc?autoplay=1&start=0" frameborder="0" allowfullscreen></iframe>
+                <iframe width="500" height="500" src="https://www.youtube.com/embed/sZ5nEuG-CRc?autoplay=1&start=1" frameborder="0" allowfullscreen></iframe>-->
                 <!--<canvas id="music-for-airports" width="1000" height="1000" style="width: 800px; height: 800px;"></canvas>
                 <script src="https://cdn.rawgit.com/mohayonao/web-audio-api-shim/master/build/web-audio-api-shim.min.js"></script>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/1.0.0/fetch.min.js"></script>
 
                 <script src="musicforairports.js"></script>-->
-            </section>
+            <!--</section>-->
+            <section class='bg4 ctaBig'><div class='content'>MY NAME IS CONRAD<br /> undefined is null or not an object<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></div></section>
         </div>
-        <marquee>If the music makes you feel uneasy it might be because the track is syncronised 1 second apart. I am inordinately proud of discovering this effect. It might also be because the track is called "Remurdered". Lastly, if you need a little web developer laugh then google "Marqee Tag"...</marquee>
-                
+        <!--<marquee>If the music makes you feel uneasy it might be because the track is syncronised 1 second apart. I am inordinately proud of discovering this effect. It might also be because the track is called "Remurdered". Lastly, if you need a little web developer laugh then google "Marqee Tag"...</marquee>
+                -->
         <script>
             var randomBackground = () => {
 
-                document.documentElement.className = 'bg' + (Math.floor(Math.random() * 6) + 1  );
+                //document.documentElement.className = 'bg' + (Math.floor(Math.random() * 6) + 1  );
             }
 
             (() => 

@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*.container {
+    overflow-x: hidden;
+    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Cousine', monospace;
+    font-size: 36px;
+
+}*/
+
+section {
+    min-height: 80vh;
+}
+
+.content {
+    overflow-x: hidden;
+    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Cousine', monospace;
+    font-size: 36px;
+    padding: 100px 300px 100px 300px;
+}
+
+.content li {
+    list-style: none;
+}

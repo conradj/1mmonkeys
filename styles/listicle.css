@@ -1,0 +1,51 @@
+.listicle li {
+    padding: 10px;
+}
+
+.listItem label {
+    cursor: pointer;
+}
+
+.listItem label:hover,
+.listItem label:active {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.listItem input[type=checkbox],
+.listItem div
+{
+    display: block;
+    visibility: hidden;
+    color: rgba(0,255,0,0.8);
+    text-shadow: none;
+    text-transform: none;
+    font-style: italic;
+    font-size: 0.75em;
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    opacity: 0;
+    max-height: 0px;
+    transition: visibility 0s, transform 0.3s, opacity 0.3s, max-height 0.3s;
+    transform: translateY(-100%);
+}
+
+.listItem blockquote {
+    padding-bottom: 4px;
+}
+
+.listItem small {
+    color: rgba(200, 200, 200, 0.9);
+    /*font-family: 'Cousine', monospace;*/
+    font-style: normal;
+    font-size: 0.5em;
+}
+
+.listItem input[type=checkbox]:checked + label {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.listItem input[type=checkbox]:checked + label > div {
+    visibility: visible;
+    opacity: 1;
+    max-height: 500px;
+    transform: translateY(0px);
+}

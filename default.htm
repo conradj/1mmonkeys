@@ -7,6 +7,8 @@
         <link rel="stylesheet" type="text/css" href="styles/styles.css" />
         <link rel="stylesheet" type="text/css" href="styles/backgrounds.css" />
 		<link rel="stylesheet" type="text/css" href="styles/links.css" />
+        <link rel="stylesheet" type="text/css" href="styles/listicle.css" />
+        <script src="https://use.fontawesome.com/f3995b1f69.js"></script>
     </head>
     <body>
         <!--<nav class="cl-effect-21 negative">
@@ -26,16 +28,64 @@
             </section>
             <section class='Projects bg3'>
                 <div class='content'>
-                    <h1>Projects (and completion %age)</h1>
-                    <ol>
-                        <li>This website <span class='completed'>20%-100%</span></li>
-                        <li>Property Manager <span class='completed'>20%-100%</span></li>
-                        <li>Sonoserous <span class='completed'>20%-100%</span></li>
-                        <li>IoT Thing <span class='completed'>20%-100%</span></li>
-                        <li><a href='http://matildann.azurewebsites.net' target='_blank'><span>Matildann</span><span>Bubbles</span></a> <span class='completed'>100%</span></li>
-                        <li>Totterup <span class='completed'>100%</span></li>
+                    <h1>Projects</h1>
+                    <ol class='listicle'>
+                        <li>
+                            <div class='listItem'>
+                                <input type='checkbox' id='btnPropMan'/>
+                                <label class='btn' for='btnPropMan'>Property Manager
+                                    <div>
+                                        <blockquote>Manage your Rightmove searches in Trello</blockquote>
+                                        <small>Stormpath for Auth | Stripe for billing | Trello api | Node (Express, Jade, Swagger) | Azure | Visual Studio Online Release Management</small>
+                                    </div>
+                                </label>
+                            </div>    
+                        </li>
+                        <li>
+                            <div class='listItem'>
+                                <input type='checkbox' id='btnSonos'/>
+                                <label class='btn' for='btnSonos'>Sonoserous
+                                    <div>
+                                        <blockquote>Scrobble Sonos plays to the Web <a class='github' href='https://github.com/conradj/sonoserous'><i class="fa fa-github" aria-hidden="true"></i></a></blockquote>
+                                        <small>Raspberry Pi | Python | Sonos</small>                                        
+                                    </div>
+                                </label>
+                            </div>    
+                        </li>
+                        <li>
+                            <div class='listItem'>
+                                <input type='checkbox' id='btnTotterup'/>
+                                <label class='btn' for='btnTotterup'>TotterUp
+                                    <div>
+                                        <blockquote>IoT Dashboard, Music Analyser<a class='github' href='https://github.com/conradj/iotserver'><i class="fa fa-github" aria-hidden="true"></i></a></blockquote>
+                                        <small>Node | Loopback | PostgreSQL | Echonest api | Aurelia | ES2015 | JSPM | Gulp | Websockets | Azure</small>                                        
+                                    </div>
+                                </label>
+                            </div>    
+                        </li>
+                        <li>
+                            <div class='listItem'>
+                                <input type='checkbox' id='btnMatilda'/>
+                                <label class='btn' for='btnMatilda'>matildann
+                                    <div>
+                                        <blockquote>Corporate Brochureware for a tiny human<a class='github' href='https://github.com/conradj/matildann'><i class="fa fa-github" aria-hidden="true"></i></a></blockquote>
+                                        <small>Azure | Pictures and Prose</small>                                        
+                                    </div>
+                                </label>
+                            </div>    
+                        </li>
+                        <li>
+                            <div class='listItem'>
+                                <input type='checkbox' id='btn1mmonkeys'/>
+                                <label class='btn' for='btn1mmonkeys'>This Website
+                                    <div>
+                                        <blockquote>Experiments & undesign <a class='github' href='https://github.com/conradj/1mmonkeys'><i class="fa fa-github" aria-hidden="true"></i></a></blockquote>
+                                        <small>Azure | Lets Encrypt</small>
+                                    </div>
+                                </label>
+                            </div>
+                        </li>
                         <li>Pocket Weekly Reads <span class='completed'>100%</span></li>
-                        
                         <li>Smartthings app to tell you if your train is late<span class='completed'>100%</span></li>
                         <li>Travel a bit <span class='completed'>20-100%</span></li>
                         <li>get a job <span class='completed'>20-100%</span></li>

@@ -1,7 +1,6 @@
 a {
     position: relative;
     display: inline-block;
-    /*margin: 15px 25px;*/
     outline: none;
     color: rgb(255, 255, 255);
     color: rgba(255, 255, 255, 0.7);
@@ -10,11 +9,8 @@ a {
     letter-spacing: 1px;
     font-weight: 700;
     text-shadow: 0 0 1px rgba(255,255,255,0.3);
-    /*text-shadow: none;*/
-    /*font-size: 0.35em;*/
     padding: 10px;
     transition: color 0.3s;
-    width: 500px;
 }
 
 .negative a {

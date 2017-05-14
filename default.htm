@@ -1,6 +1,7 @@
 <html>
     <head>
         <title>999,999 monkeys typing</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <style>
             @import url('https://fonts.googleapis.com/css?family=Cousine:700');
         </style>
@@ -15,25 +16,26 @@
                 <a id='rotateBG'><span>I carnt see</span><span>Change background</span></a>
             </nav>-->
         <div class="container">            
+            <!--https://tympanus.net/Development/PseudoElementsAnimationsTransitions/index2.html-->
             <section class='bg2 social'>
                 <div class='content'>
                     <nav class="cl-effect-21">
-                        <a href='https://www.twitter.com/conradj' target='_blank'><span>twitter</span><span>Random witterings</span></a>
-                        <a href='https://www.linkedin.com/in/conradsjackson' target='_blank'><span>linkedin</span><span>Professional Front</span></a>
-                        <a href='https://github.com/conradj' target='_blank'><span>github</span><span>Code dossing</span></a>
-                        <a href='https://www.facebook.com/conradsjackson' target='_blank' title='ick'><span>facebook</span><span>virtual persona</span></a>
-                        <a href='https://plus.google.com/u/0/+ConradJackson1' target='_blank' title='whyyyyyy?'><span>google+</span><span>Temporal Deadzone</span></a>
+                        <a class='mainlink' href='https://www.twitter.com/conradj' target='_blank'><span>twitter</span><span>Random witterings</span></a>
+                        <a class='mainlink' href='https://www.linkedin.com/in/conradsjackson' target='_blank'><span>linkedin</span><span>Professional Front</span></a>
+                        <a class='mainlink' href='https://github.com/conradj' target='_blank'><span>github</span><span>Code dossing</span></a>
+                        <a class='mainlink' href='https://www.facebook.com/conradsjackson' target='_blank' title='ick'><span>facebook</span><span>virtual persona</span></a>
+                        <a class='mainlink' href='https://plus.google.com/u/0/+ConradJackson1' target='_blank' title='whyyyyyy?'><span>google+</span><span>Temporal Deadzone</span></a>
                     </nav>
                 </div>
             </section>
             <section class='Projects bg3'>
                 <div class='content'>
-                    <h1>Projects</h1>
+                    <h1>Side Projects</h1>
                     <ol class='listicle'>
                         <li>
                             <div class='listItem'>
                                 <input type='checkbox' id='btnPropMan'/>
-                                <label class='btn' for='btnPropMan'>Property Manager
+                                <label class='btn' for='btnPropMan'>Property Manager <a class='external' target='_blank' href='https://propertymanagertrellostripestormpath.azurewebsites.net'><i class="fa fa-external-link" aria-hidden="true"></i></a>
                                     <div>
                                         <blockquote>Manage your Rightmove searches in Trello</blockquote>
                                         <small>Stormpath for Auth | Stripe for billing | Trello api | Node (Express, Jade, Swagger) | Azure | Visual Studio Online Release Management</small>
@@ -46,8 +48,9 @@
                                 <input type='checkbox' id='btnSonos'/>
                                 <label class='btn' for='btnSonos'>Sonoserous
                                     <div>
-                                        <blockquote>Scrobble Sonos plays to the Web <a class='github' href='https://github.com/conradj/sonoserous'><i class="fa fa-github" aria-hidden="true"></i></a></blockquote>
-                                        <small>Raspberry Pi | Python | Sonos</small>                                        
+                                        <blockquote>Scrobble Sonos plays to the Web</blockquote>
+                                        <small>Raspberry Pi | Python | Sonos |</small>
+                                        <a class='github' href='https://github.com/conradj/sonoserous' target='_blank'><i class="fa fa-github" aria-hidden="true"></i></a>                                        
                                     </div>
                                 </label>
                             </div>    
@@ -55,10 +58,11 @@
                         <li>
                             <div class='listItem'>
                                 <input type='checkbox' id='btnTotterup'/>
-                                <label class='btn' for='btnTotterup'>TotterUp
+                                <label class='btn' for='btnTotterup'>TotterUp <a class='external' target='_blank' href='https://totterup.azurewebsites.net'><i class="fa fa-external-link" aria-hidden="true"></i></a>
                                     <div>
-                                        <blockquote>IoT Dashboard, Music Analyser<a class='github' href='https://github.com/conradj/iotserver'><i class="fa fa-github" aria-hidden="true"></i></a></blockquote>
-                                        <small>Node | Loopback | PostgreSQL | Echonest api | Aurelia | ES2015 | JSPM | Gulp | Websockets | Azure</small>                                        
+                                        <blockquote>IoT Dashboard, Music Analyser</blockquote>
+                                        <small>Node | Loopback | PostgreSQL | Echonest api | Aurelia | ES2015 | JSPM | Gulp | Websockets | Azure |</small>
+                                        <a class='github' href='https://github.com/conradj/iotserver' target='_blank'><i class="fa fa-github" aria-hidden="true"></i></a>                                        
                                     </div>
                                 </label>
                             </div>    
@@ -66,10 +70,11 @@
                         <li>
                             <div class='listItem'>
                                 <input type='checkbox' id='btnMatilda'/>
-                                <label class='btn' for='btnMatilda'>matildann
+                                <label class='btn' for='btnMatilda'>Matildann <a class='external' target='_blank' href='https://matildann.azurewebsites.net'><i class="fa fa-external-link" aria-hidden="true"></i></a>
                                     <div>
-                                        <blockquote>Corporate Brochureware for a tiny human<a class='github' href='https://github.com/conradj/matildann'><i class="fa fa-github" aria-hidden="true"></i></a></blockquote>
-                                        <small>Azure | Pictures and Prose</small>                                        
+                                        <blockquote>Corporate Brochureware for a tiny human</blockquote>
+                                        <small>Azure | Pictures and Prose |</small>
+                                        <a class='github' href='https://github.com/conradj/matildaann'><i class="fa fa-github" aria-hidden="true"></i></a>
                                     </div>
                                 </label>
                             </div>    
@@ -77,29 +82,41 @@
                         <li>
                             <div class='listItem'>
                                 <input type='checkbox' id='btn1mmonkeys'/>
-                                <label class='btn' for='btn1mmonkeys'>This Website
+                                <label class='btn' for='btn1mmonkeys'>Conradj.co.uk <a class='external' href='#btn1mmonkeys'><small style='text-transform:lowercase;'>(You're looking at it)</small></a>
                                     <div>
-                                        <blockquote>Experiments & undesign <a class='github' href='https://github.com/conradj/1mmonkeys'><i class="fa fa-github" aria-hidden="true"></i></a></blockquote>
-                                        <small>Azure | Lets Encrypt</small>
+                                        <blockquote>Experiments & undesign</blockquote>
+                                        <small>Azure | Lets Encrypt | Css modules (coming soon) | React/Vue (coming soon) |</small>
+                                        <a class='github' href='https://github.com/conradj/1mmonkeys'><i class="fa fa-github" aria-hidden="true"></i></a>
                                     </div>
                                 </label>
                             </div>
                         </li>
-                        <li>Pocket Weekly Reads <span class='completed'>100%</span></li>
-                        <li>Smartthings app to tell you if your train is late<span class='completed'>100%</span></li>
-                        <li>Travel a bit <span class='completed'>20-100%</span></li>
-                        <li>get a job <span class='completed'>20-100%</span></li>
-                        <li>Live in a house <span class='completed'>100%</span></li>
-                        <li>with someone amazing <span class='completed'>100%</span></li>
-                        <li>and a cute little kid <span class='completed'>100%</span></li>
-                        <li>Ride bikes together<span class='completed'>100%</span></li>
+                        <li>
+                            <div class='listItem'>
+                                <input type='checkbox' id='btnPocket'/>
+                                <label class='btn' for='btnPocket'>Pocket Weekly Reads <a class='external' target='_blank' href='https://curator-cj.azurewebsites.net'><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                                    <div>
+                                        <blockquote>Weekly digest of articles I've read on <a href='https://getpocket.com'>Pocket</a></blockquote>
+                                        <small>Node Express | Mongo | Pug | Pocket api |</small>
+                                        <a class='github' href='https://github.com/conradj/reading'><i class="fa fa-github" aria-hidden="true"></i></a>
+                                    </div>
+                                </label>
+                            </div>
+                        </li>
+                        <li>Smartthings app to tell you if your train is late</li>
+                        <li>Travel a bit</li>
+                        <li>get a job</li>
+                        <li>Live in a house</li>
+                        <li>with someone amazing</li>
+                        <li>and a cute little kid</li>
+                        <li>Ride bikes together</li>
                     </ol>
                 </div>
             </section>
             <section class='Ideas bg1'>
                 <div class='content'>
                     <h1>Ideas (as yet unstarted)</h1>
-                    <ol>
+                    <ol class='listicle'>
                         <li>Reverse Kickstarter (people pledge money against your idea until someone says they will take the money and do it)</li>
                         <li>Some sort of thing to save the news</li>
                         <li>Some sort of thing that saves democracy</li>
@@ -115,8 +132,9 @@
                         <li>Road bumps that play a tune if you go over them slowly enough</li>
                         <li>Tin foil clothing brand to protect you from Wifi/Kinect</li>
                         <li>Toothbrush that changes from grey to a nice bright colour when wet and then back as it dries out. Try and keep the colour by brushing your teeth regularly. Also reminds you if you brushed your teeth this morning or not (I forget).</li>
-                        <li>An image serving site where you could specify the subject matter, type and size of image: <img url=”http://pictopics.com/happycat/icon/16/16” /> </li>
+                        <li>An image serving site where you could specify the subject matter, type and size of image: <pre>&lt;img url=”http://pictopics.com/happycat/icon/16/16” /&gt;</pre> </li>
                         <li>IoT automation routines generated via machine learning</li>
+                        <li>AI/ML Drone decorators - roofs and high ceilings a speciality! Special Introductory Offer!</li>
                     </ol>
                 </div>
             </section>
@@ -157,8 +175,8 @@
                 <div class='content'>
                     <h1>Attribution</h1>
                     <ul>
-                        <li><a href='http://technoir.nl/' target='_blank'><span>Movie Backgrounds</span><span>Tech Noir</span></a></li>
-                        <li><a href='https://livingstills.tumblr.com/' target='_blank'>Nature backgrounds<span></span><span>Living stills</span></a></li>
+                        <li><a class='mainlink' href='http://technoir.nl/' target='_blank'><span>Movie Backgrounds</span><span>Tech Noir</span></a></li>
+                        <li><a class='mainlink' href='https://livingstills.tumblr.com/' target='_blank'>Nature backgrounds<span></span><span>Living stills</span></a></li>
                     </ul>
                 </div>
             </section>

@@ -1,9 +1,16 @@
 .listicle li {
-    padding: 10px;
+    margin: 20px 0px;
+    padding: 40px 40px 30px;
+    background-color: rgba(20, 20, 20, 0.7);
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
 .listItem label {
     cursor: pointer;
+}
+
+.listItem label .external {
+    display: none;
 }
 
 .listItem label:hover,
@@ -41,6 +48,10 @@
 
 .listItem input[type=checkbox]:checked + label {
     color: rgba(255, 255, 255, 0.9);
+}
+
+.listItem input[type=checkbox]:checked + label .external {
+    display: inline-block;
 }
 
 .listItem input[type=checkbox]:checked + label > div {

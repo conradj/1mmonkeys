@@ -3,14 +3,27 @@
     padding: 0;
 }
 
-/*.container {
-    overflow-x: hidden;
+a {
     color: rgb(255, 255, 255);
     color: rgba(255, 255, 255, 0.7);
-    font-family: 'Cousine', monospace;
-    font-size: 36px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    text-shadow: 0 0 1px rgba(255,255,255,0.3);
+}
 
-}*/
+a:hover,
+a:active,
+.fa:hover,
+.fa:active {
+    color: rgb(255, 255, 255);
+}
+
+.fa:hover,
+.fa:active {
+    font-weight: 700;
+}
 
 section {
     min-height: 80vh;
@@ -22,7 +35,7 @@ section {
     color: rgba(255, 255, 255, 0.7);
     font-family: 'Cousine', monospace;
     font-size: 36px;
-    padding: 100px 300px 100px 300px;
+    padding: 10%;
 }
 
 .content li {

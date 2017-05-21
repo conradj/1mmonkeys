@@ -29,15 +29,69 @@ section {
     min-height: 80vh;
 }
 
+.social {
+    height: 100vh;
+}
+    .social .content {
+        padding-top: 20px;
+    }
+
+    .social nav a {
+        white-space: nowrap;
+    }
+
+.myname {
+    text-align: center;
+    padding-top: 70px;
+}
+
 .content {
     overflow-x: hidden;
     color: rgb(255, 255, 255);
     color: rgba(255, 255, 255, 0.7);
-    font-family: 'Cousine', monospace;
-    font-size: 36px;
     padding: 10%;
+    font-size: 36px;
+    font-family: 'Cousine', monospace;
 }
 
 .content li {
     list-style: none;
+}
+
+nav ul {
+  display: flex;
+  width: 100%;
+}
+nav ul li {
+  flex: 1 1 100%;
+    text-align: center;
+}
+
+.aligner {
+    display: flex;
+    align-items: center;
+    height: 70%;
+    min-height: 70%;
+    justify-content: center;
+}
+
+.aligner-item {
+    flex: 1 1 100%;
+}
+
+.aligner-item--top {
+  align-self: flex-start;
+}
+
+.aligner-item--bottom {
+  align-self: flex-end;
+}
+
+.aligner-item--fixed {
+  flex: none;
+  max-width: 50%;
+}
+
+.next-nav {
+    text-align: center;
 }

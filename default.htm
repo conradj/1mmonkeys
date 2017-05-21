@@ -4,35 +4,57 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <style>
             @import url('https://fonts.googleapis.com/css?family=Cousine:700');
+            @import url('https://fonts.googleapis.com/css?family=Space+Mono');
         </style>
         <link rel="stylesheet" type="text/css" href="styles/styles.css" />
         <link rel="stylesheet" type="text/css" href="styles/backgrounds.css" />
 		<link rel="stylesheet" type="text/css" href="styles/links.css" />
         <link rel="stylesheet" type="text/css" href="styles/listicle.css" />
+        <link rel="stylesheet" type="text/css" href="styles/circle.css" />
+        <link rel="stylesheet" type="text/css" href="styles/typefaces.css" />
         <script src="https://use.fontawesome.com/f3995b1f69.js"></script>
     </head>
     <body>
+        
         <!--<nav class="cl-effect-21 negative">
                 <a id='rotateBG'><span>I carnt see</span><span>Change background</span></a>
             </nav>-->
         <div class="container">            
             <!--https://tympanus.net/Development/PseudoElementsAnimationsTransitions/index2.html-->
-            <section class='bg2 social'>
+            <section class='social'>
                 <div class='content'>
-                    <nav class="cl-effect-21">
-                        <a class='mainlink' href='https://www.twitter.com/conradj' target='_blank'><span>twitter</span><span>Random witterings</span></a>
-                        <a class='mainlink' href='https://www.linkedin.com/in/conradsjackson' target='_blank'><span>linkedin</span><span>Professional Front</span></a>
-                        <a class='mainlink' href='https://github.com/conradj' target='_blank'><span>github</span><span>Code dossing</span></a>
-                        <a class='mainlink' href='https://www.facebook.com/conradsjackson' target='_blank' title='ick'><span>facebook</span><span>virtual persona</span></a>
-                        <a class='mainlink' href='https://plus.google.com/u/0/+ConradJackson1' target='_blank' title='whyyyyyy?'><span>google+</span><span>Temporal Deadzone</span></a>
+                    <nav class="cl-effect-21 aligner-item aligner-item--top">
+                        <ul>
+                            <li><a class='mainlink' href='https://www.twitter.com/conradj' target='_blank'><span>twitter</span><span>random witterings</span></a></li>
+                            <li><a class='mainlink' href='https://www.linkedin.com/in/conradsjackson' target='_blank'><span>linkedin</span><span>professional front</span></a></li>
+                            <li><a class='mainlink' href='https://github.com/conradj' target='_blank'><span>github</span><span>code dossing</span></a></li>
+                            <li><a class='mainlink' href='https://www.facebook.com/conradsjackson' target='_blank' title='ick'><span>facebook</span><span>virtual persona</span></a></li>
+                            <li><a class='mainlink' href='https://plus.google.com/u/0/+ConradJackson1' target='_blank' title='whyyyyyy?'><span>google+</span><span>temporal deadzone</span></a></li>
+                        </ul>
                     </nav>
-                </div>
+                    <div class='aligner'>
+                        <div class="aligner-item main clearfix">
+                            <h1 class="title title-r">CONRAD</h1>
+                        </div>
+                        <div class="aligner-item main clearfix">
+                            <div class="circle">
+                                <img style="width:100%; height:100%" src='https://en.gravatar.com/userimage/33586099/0f6cb1c9d444029b5b13df8379081784.png?size=400' />
+                            </div>
+                        </div>
+                        <div class="aligner-item main clearfix">
+                            <h1 class="title">JACKSON <span>(that's me!)</span></h1>
+                        </div>
+                    </div>
+                    <div class="aligner-item aligner-item--bottom next-nav">
+                        <a href='#projects'><i class="fa fa-chevron-down highlight" aria-hidden="true"></i></a>
+                    </div>
+                </div>        
             </section>
-            <section class='Projects bg3'>
+            <section id='projects' class='Projects bg3'>
                 <div class='content'>
                     <h1>Side Projects</h1>
                     <ol class='listicle'>
-                        <li>
+                        <li for='btnPropMan'>
                             <div class='listItem'>
                                 <input type='checkbox' id='btnPropMan'/>
                                 <label class='btn' for='btnPropMan'>Property Manager <a class='external' target='_blank' href='https://propertymanagertrellostripestormpath.azurewebsites.net'><i class="fa fa-external-link" aria-hidden="true"></i></a>
@@ -147,6 +169,7 @@
                         <li>Pocket</li>
                         <li>Sonos</li>
                         <li>Cotic</li>
+                        <li>Animated gif backgrounds</li>
                         <li>Brushing your teeth twice a day</li>
                     </ul>
                 </div>
@@ -168,6 +191,9 @@
                         <li>Scales</li>
                         <li>Speakers</li>
                         <li>Watch</li>
+                        <li>Thermostat</li>
+                        <li>Buttons</li>
+                        <li><a href='https://www.youtube.com/watch?v=VJJXVux5P3Q' target='_blank'>Thingumies</a></li>
                     </ul>
                 </div>
             </section>
@@ -177,6 +203,8 @@
                     <ul>
                         <li><a class='mainlink' href='http://technoir.nl/' target='_blank'><span>Movie Backgrounds</span><span>Tech Noir</span></a></li>
                         <li><a class='mainlink' href='https://livingstills.tumblr.com/' target='_blank'>Nature backgrounds<span></span><span>Living stills</span></a></li>
+                        <li><a class='mainlink' href='ttps://tympanus.net' target='_blank'>Tricksy CSS<span></span><span>Codrops</span></a></li>
+                        <!--view-source:https://tympanus.net/Development/PseudoElementsAnimationsTransitions/index2.html-->
                     </ul>
                 </div>
             </section>
@@ -236,7 +264,26 @@
 
                 <script src="musicforairports.js"></script>-->
             <!--</section>-->
-            <section class='bg4 ctaBig'><div class='content'>MY NAME IS CONRAD<br /> undefined is null or not an object<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></div></section>
+            <section class='bg4 ctaBig'><div class='content'>MY NAME IS CONRAD<br /><span class='mono'>undefined is null or not an object</span><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></div></section>
+            <section class=''>
+                <h1>NOTES</h1>
+                <p>Nobody will be reading this far down.</p>
+                <p>I wonder how far can I get with no js, no build steps, no css preprocessor?</p>
+                <h4>/// TODO:</h4>
+                <ul>
+                    <li>Nicer section titles</li>
+                    <li>Finish Side projects (the section on it, I'm never going to finish the actual side projects)</li>
+                    <li>Do a Work section</li>
+                    <li>Fix link formatting</li>
+                    <li>Section navigation with smooth scroll (in css only?)</li>
+                    <li>Format Ideas section and add more info</li>
+                    <li>Fix colours</li>
+                    <li>Better picture of me, maybe randomize on click</li>
+                    <li>Less Google like lens</li>
+                    <li>Replace G+ with something better</li>
+                    <li>One day maybe tidy it all up, especially the css organisation. One day.</li>
+                </ul>
+            </section>
         </div>
         <!--<marquee>If the music makes you feel uneasy it might be because the track is syncronised 1 second apart. I am inordinately proud of discovering this effect. It might also be because the track is called "Remurdered". Lastly, if you need a little web developer laugh then google "Marqee Tag"...</marquee>
                 -->

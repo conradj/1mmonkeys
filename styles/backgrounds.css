@@ -5,6 +5,10 @@ section {
     background-attachment: fixed;
 }
 
+.social {
+    background-color: rgb(39, 40, 34);
+}
+
 .bg1 {
     /*aurora*/
     background-image: url(https://68.media.tumblr.com/b916e3e47f2aed1e658d0e32b72c8f26/tumblr_onfsuhz8hS1upvbufo1_540.gif);

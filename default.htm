@@ -19,19 +19,10 @@
         <!--<nav class="cl-effect-21 negative">
                 <a id='rotateBG'><span>I carnt see</span><span>Change background</span></a>
             </nav>-->
-        <div class="container">            
+        <div class="container">
             <!--https://tympanus.net/Development/PseudoElementsAnimationsTransitions/index2.html-->
-            <section class='social'>
+            <section class='home'>
                 <div class='content'>
-                    <nav class="cl-effect-21 aligner-item aligner-item--top">
-                        <ul>
-                            <li><a class='mainlink' href='https://www.twitter.com/conradj' target='_blank'><span>twitter</span><span>random witterings</span></a></li>
-                            <li><a class='mainlink' href='https://www.linkedin.com/in/conradsjackson' target='_blank'><span>linkedin</span><span>professional front</span></a></li>
-                            <li><a class='mainlink' href='https://github.com/conradj' target='_blank'><span>github</span><span>code dossing</span></a></li>
-                            <li><a class='mainlink' href='https://www.facebook.com/conradsjackson' target='_blank' title='ick'><span>facebook</span><span>virtual persona</span></a></li>
-                            <li><a class='mainlink' href='https://plus.google.com/u/0/+ConradJackson1' target='_blank' title='whyyyyyy?'><span>google+</span><span>temporal deadzone</span></a></li>
-                        </ul>
-                    </nav>
                     <div class='aligner'>
                         <div class="aligner-item main clearfix">
                             <h1 class="title title-r">CONRAD</h1>
@@ -45,29 +36,50 @@
                             <h1 class="title">JACKSON <span>(that's me!)</span></h1>
                         </div>
                     </div>
-                    <div class="aligner-item aligner-item--bottom next-nav">
-                        <a href='#projects'><i class="fa fa-chevron-down highlight" aria-hidden="true"></i></a>
-                    </div>
-                </div>        
+                </div>    
+                <nav class="cl-effect-21 aligner-item aligner-item--top">
+                    <ul>
+                        <li><a class='mainlink' href='#contact'><span>Connecting</span><span>contact</span></a></li>
+                        <li><a class='mainlink' href='#doing'><span>Doing</span><span>hobby code</span></a></li>
+                        <li><a class='mainlink' href='#being'><span>Being</span><span>bio</span></a></li>
+                        <li><a class='mainlink' href='#thinking'><span>Thinking</span><span>daftness</span></a></li>
+                        <li><a class='mainlink' href='#liking'><span>Using</span><span>favourites</span></a></li>
+                        <li><a class='mainlink' href='#using'><span>Trying</span><span>experiments</span></a></li>
+                        <li><a class='mainlink' href='#helping'><span>Helping</span><span>attribution</span></a></li>
+                    </ul>
+                </nav>
             </section>
-            <section id='projects' class='Projects bg3'>
+            <section id='contact' class='bg8'>
+                <div class='content'>
+                    <h1>Contact</h1>
+                    <ul>
+                        <li><a class='mainlink' href='mailto:site@conradj.co.uk' target='_blank'><span>email</span><span>20th century communication</span></a></li>
+                        <li><a class='mainlink' href='https://www.twitter.com/conradj' target='_blank'><span>twitter</span><span>random witterings</span></a></li>
+                        <li><a class='mainlink' href='https://www.linkedin.com/in/conradsjackson' target='_blank'><span>linkedin</span><span>professional front</span></a></li>
+                        <li><a class='mainlink' href='https://github.com/conradj' target='_blank'><span>github</span><span>code dossing</span></a></li>
+                        <li><a class='mainlink' href='https://www.facebook.com/conradsjackson' target='_blank' title='ick'><span>facebook</span><span>virtual persona</span></a></li>
+                        <li><a class='mainlink' href='https://plus.google.com/u/0/+ConradJackson1' target='_blank' title='whyyyyyy?'><span>google+</span><span>temporal deadzone</span></a></li>
+                    </ul>
+                </div>
+            </section>
+            <section id='doing' class='Projects bg3'>
                 <div class='content'>
                     <h1>Side Projects</h1>
                     <ol class='listicle'>
                         <li for='btnPropMan'>
                             <div class='listItem'>
-                                <input type='checkbox' id='btnPropMan'/>
+                                <input type='checkbox' id='btnPropMan' checked='checked'/>
                                 <label class='btn' for='btnPropMan'>Property Manager <a class='external' target='_blank' href='https://propertymanagertrellostripestormpath.azurewebsites.net'><i class="fa fa-external-link" aria-hidden="true"></i></a>
                                     <div>
                                         <blockquote>Manage your Rightmove searches in Trello</blockquote>
-                                        <small>Stormpath for Auth | Stripe for billing | Trello api | Node (Express, Jade, Swagger) | Azure | Visual Studio Online Release Management</small>
+                                        <small>Stormpath for Auth | Stripe for billing | Trello api | Node (Express, Jade, Swagger) | Azure/VSO </small>
                                     </div>
                                 </label>
                             </div>    
                         </li>
                         <li>
                             <div class='listItem'>
-                                <input type='checkbox' id='btnSonos'/>
+                                <input type='checkbox' id='btnSonos' checked='checked'/>
                                 <label class='btn' for='btnSonos'>Sonoserous
                                     <div>
                                         <blockquote>Scrobble Sonos plays to the Web</blockquote>
@@ -79,7 +91,7 @@
                         </li>
                         <li>
                             <div class='listItem'>
-                                <input type='checkbox' id='btnTotterup'/>
+                                <input type='checkbox' id='btnTotterup' checked='checked'/>
                                 <label class='btn' for='btnTotterup'>TotterUp <a class='external' target='_blank' href='https://totterup.azurewebsites.net'><i class="fa fa-external-link" aria-hidden="true"></i></a>
                                     <div>
                                         <blockquote>IoT Dashboard, Music Analyser</blockquote>
@@ -91,7 +103,7 @@
                         </li>
                         <li>
                             <div class='listItem'>
-                                <input type='checkbox' id='btnMatilda'/>
+                                <input type='checkbox' id='btnMatilda' checked='checked'/>
                                 <label class='btn' for='btnMatilda'>Matildann <a class='external' target='_blank' href='https://matildann.azurewebsites.net'><i class="fa fa-external-link" aria-hidden="true"></i></a>
                                     <div>
                                         <blockquote>Corporate Brochureware for a tiny human</blockquote>
@@ -103,7 +115,7 @@
                         </li>
                         <li>
                             <div class='listItem'>
-                                <input type='checkbox' id='btn1mmonkeys'/>
+                                <input type='checkbox' id='btn1mmonkeys' checked='checked'/>
                                 <label class='btn' for='btn1mmonkeys'>Conradj.co.uk <a class='external' href='#btn1mmonkeys'><small style='text-transform:lowercase;'>(You're looking at it)</small></a>
                                     <div>
                                         <blockquote>Experiments & undesign</blockquote>
@@ -115,7 +127,7 @@
                         </li>
                         <li>
                             <div class='listItem'>
-                                <input type='checkbox' id='btnPocket'/>
+                                <input type='checkbox' id='btnPocket' checked='checked'/>
                                 <label class='btn' for='btnPocket'>Pocket Weekly Reads <a class='external' target='_blank' href='https://curator-cj.azurewebsites.net'><i class="fa fa-external-link" aria-hidden="true"></i></a>
                                     <div>
                                         <blockquote>Weekly digest of articles I've read on <a href='https://getpocket.com'>Pocket</a></blockquote>
@@ -125,7 +137,13 @@
                                 </label>
                             </div>
                         </li>
-                        <li>Smartthings app to tell you if your train is late</li>
+                    </ol>
+                </div>
+            </section>
+            <section id='being' class='life bg1'>
+                <div class='content'>
+                    <h1>The story so far</h1>
+                    <ol class='listicle'>
                         <li>Travel a bit</li>
                         <li>get a job</li>
                         <li>Live in a house</li>
@@ -135,10 +153,11 @@
                     </ol>
                 </div>
             </section>
-            <section class='Ideas bg1'>
+            <section id='thinking' class='Ideas bg1'>
                 <div class='content'>
                     <h1>Ideas (as yet unstarted)</h1>
                     <ol class='listicle'>
+                        <li>Smartthings app to tell you if your train is late</li>
                         <li>Reverse Kickstarter (people pledge money against your idea until someone says they will take the money and do it)</li>
                         <li>Some sort of thing to save the news</li>
                         <li>Some sort of thing that saves democracy</li>
@@ -160,7 +179,7 @@
                     </ol>
                 </div>
             </section>
-            <section class='Likes bg5'>
+            <section id='liking' class='Likes bg5'>
                 <div class='content'>
                     <h1>things I like</h1>
                     <ul>
@@ -174,7 +193,7 @@
                     </ul>
                 </div>
             </section>
-            <section class='bg7'>
+            <section id='using' class='bg7'>
                 <div class='content'>
                     <h1>currently trying out:</h1>
                     <ul>
@@ -197,7 +216,7 @@
                     </ul>
                 </div>
             </section>
-            <section class='bg8'>
+            <section id='helping' class='bg8'>
                 <div class='content'>
                     <h1>Attribution</h1>
                     <ul>
@@ -271,6 +290,8 @@
                 <p>I wonder how far can I get with no js, no build steps, no css preprocessor?</p>
                 <h4>/// TODO:</h4>
                 <ul>
+                    <li>Fix mobile for home screen</li>
+                    <li>Sort out the mixed content TLS issue</li>
                     <li>Nicer section titles</li>
                     <li>Finish Side projects (the section on it, I'm never going to finish the actual side projects)</li>
                     <li>Do a Work section</li>

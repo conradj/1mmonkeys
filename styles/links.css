@@ -5,7 +5,7 @@ a.mainlink {
     color: rgb(255, 255, 255);
     color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     letter-spacing: 1px;
     font-weight: 700;
     text-shadow: 0 0 1px rgba(255,255,255,0.3);
@@ -77,15 +77,13 @@ a.mainlink:focus span:last-child {
     transform: translateY(0%);
 }
 
-
-
 a.mainlink::before,
 a.mainlink::after {
     position: absolute;
     left: 0;
     width: 100%;
     height: 2px;
-    background: #fff;
+    /*background: #fff;*/
     content: '';
     opacity: 0;
     -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;

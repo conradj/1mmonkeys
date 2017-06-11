@@ -1,9 +1,14 @@
 .listicle li {    
+    width: 80%;
+}
+
+.listItem {
+    padding: 0 20px;
 }
 
 .listItem label {
     margin: 20px 0px;
-    padding: 40px 40px 30px;
+    padding: 40px 80px 30px;
     width: 100%;
     display: block;
     background-color: rgba(20, 20, 20, 0.7);

@@ -1,22 +1,10 @@
-.listicle li {    
-    width: 80%;
-}
-
-.listItem {
-    padding: 0 20px;
-}
-
+.
 .listItem label {
     margin: 20px 0px;
     padding: 40px 80px 30px;
-    width: 100%;
     display: block;
     background-color: rgba(20, 20, 20, 0.7);
     border-radius: 100px;
-    /*box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);*/
-
-    /*box-shadow: 0 19px 38px rgba(0,255,0,0.3), 0 15px 12px rgba(0,255,0,0.22);*/
-    
 }
 
 .listItem label:hover,
@@ -53,7 +41,6 @@
 
 .listItem small {
     color: rgba(200, 200, 200, 0.9);
-    /*font-family: 'Cousine', monospace;*/
     font-style: normal;
     font-size: 0.5em;
 }

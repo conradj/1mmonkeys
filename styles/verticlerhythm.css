@@ -1,0 +1,45 @@
+body {
+    font-size: 3vw;
+    line-height: 1.5;
+}
+
+section {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+p, li {
+    font-size: 1em; /* equiv 12px */
+    line-height: 1.5em;
+    margin: 1.5em 0;
+}
+h1 {
+    font-size:  2em; /* equiv 24px */
+    line-height: 1.5em;
+    margin:  1.5em 0;
+}
+h2 {
+    font-size:  1.8333em; /* equiv 22px */
+    line-height: 1.6364em;
+    margin:  1.6364em 0;
+}
+h3 {
+    font-size:  1.6667em; /* equiv 20px */
+    line-height: 1.8em;
+    margin:  1.8em 0;
+}
+h4 {
+    font-size:  1.5em; /* equiv 18px */
+    line-height:  1em;
+    margin:  2em 0;
+}
+h5 {
+    font-size:  1.3333em; /* equiv 16px */
+    line-height:  1.125em;
+    margin:  2.25em 0;
+}
+h6 {
+    font-size:  1.1667em; /* equiv 14px */
+    line-height:  1.2857em;
+    margin:  2.5714em 0;
+}

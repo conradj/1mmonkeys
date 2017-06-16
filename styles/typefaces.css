@@ -6,6 +6,7 @@
     text-shadow: -1px -1px 0px rgba(0,0,0,0.8), 1px 1px 0px rgba(40,40,40,1);
     font-size: 2.5em;
     color: #333;
+    line-height: 1em;
 }
 
 .title.title-r {

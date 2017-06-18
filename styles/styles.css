@@ -42,8 +42,8 @@ li {
 nav {
     background-color: rgb(18, 217, 36);
     font-family: 'Cousine', monospace;
-    /*font-size: 2.6vw;*/
-    padding: 10px 40px;
+    font-size: 0.5em;
+    padding: 0.5em 1em;
     position: sticky;
     top: 0px;
     z-index: 20;

@@ -309,16 +309,15 @@
         <!--<marquee>If the music makes you feel uneasy it might be because the track is syncronised 1 second apart. I am inordinately proud of discovering this effect. It might also be because the track is called "Remurdered". Lastly, if you need a little web developer laugh then google "Marqee Tag"...</marquee>
                 -->
         <script>
-            var randomBackground = () => {
+            if (document.location.hostname == "www.conradj.co.uk") {
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-                //document.documentElement.className = 'bg' + (Math.floor(Math.random() * 6) + 1  );
+                ga('create', 'UA-101404147-1', 'auto');
+                ga('send', 'pageview');
             }
-
-            (() => 
-                //document.documentElement.style.backgroundImage = 'url(http://68.media.tumblr.com/d3b64babe4a5b43a4d90e026c1a6e611/tumblr_ohf6peHnnk1qghl49o1_540.gif)'
-                randomBackground()
-            ) ()
-            
         </script>
     </body>
 </html>

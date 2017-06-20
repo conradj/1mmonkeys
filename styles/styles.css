@@ -17,7 +17,8 @@ section {
 }
 
 .home {
-    /*height: 90vh;*/
+    padding-left: 0em;
+    padding-right: 0em;
 }
     .home .content {
         padding: 0%;

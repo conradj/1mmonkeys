@@ -13,6 +13,10 @@
     text-align: right;
 }
 
+h1 {
+    font-family: 'Space Mono', monospace;
+}
+
 h1 span {
     font-size: 0.3em;
 }

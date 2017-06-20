@@ -1,6 +1,13 @@
 body {
-    font-size: 3vw;
+    font-size: 3.5vw;
     line-height: 1.5;
+}
+
+@media (min-width: 50em) {
+    body {
+        font-size: 3vw;
+        line-height: 1.5;
+    }
 }
 
 section {

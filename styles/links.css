@@ -37,6 +37,7 @@ a.mainlink {
     font-weight: 700;
     text-shadow: 0 0 1px rgba(255,255,255,0.3);
     transition: color 0.3s;
+    width: 100%;
 }
 
 .negative a.mainlink {

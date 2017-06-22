@@ -17,9 +17,16 @@ section {
 }
 
 .home {
-    padding-left: 0em;
-    padding-right: 0em;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
 }
+
+@media (max-width: 1000px) {
+    .home {
+        display: none;
+    }
+}
+
     .home .content {
         padding: 0%;
         padding-top: 20px;

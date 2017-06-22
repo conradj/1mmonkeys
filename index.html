@@ -3,8 +3,7 @@
         <title>999,999 monkeys typing</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <style>
-            @import url('https://fonts.googleapis.com/css?family=Cousine:700');
-            @import url('https://fonts.googleapis.com/css?family=Space+Mono');
+            @import url('https://fonts.googleapis.com/css?family=Cousine:700|Space+Mono|VT323');
         </style>
         <link rel="stylesheet" type="text/css" href="styles/typefaces.css" />
         <link rel="stylesheet" type="text/css" href="styles/verticlerhythm.css" />
@@ -36,17 +35,28 @@
                     </div>
                 </div>    
             </section>
-            <nav class="aligner-item aligner-item--top mono">
-                <ul>
-                    <li class='homelink'><a class='mainlink primary' href='#top'><span>CJ</span><span>moi</span></a></li>
-                    <li><a class='mainlink' href='#contact'><span>Connecting</span><span>contact</span></a></li>
-                    <li><a class='mainlink' href='#doing'><span>Doing</span><span>hobby code</span></a></li>
-                    <li><a class='mainlink' href='#being'><span>Being</span><span>bio</span></a></li>
-                    <li><a class='mainlink' href='#thinking'><span>Thinking</span><span>daftness</span></a></li>
-                    <li><a class='mainlink' href='#liking'><span>Using</span><span>favourites</span></a></li>
-                    <li><a class='mainlink' href='#using'><span>Trying</span><span>experiments</span></a></li>
-                </ul>
-            </nav>
+            <header>
+                <div class="mobilebar">
+                    <div class='burger'>
+                        <input type='checkbox' id='btnBurger'/>
+                        <label class='btn' for='btnBurger'>
+                            <i class="fa fa-bars fa-border" aria-hidden="true"></i>
+                            <nav class="aligner-item aligner-item--top mono">
+                                <ul class='nav-menu'>
+                                    <li class='homelink'><a class='mainlink primary' href='#top'><span>CJ</span><span>moi</span></a></li>
+                                    <li class='long'><a class='mainlink' href='#contact'><span>Connecting</span><span>contact</span></a></li>
+                                    <li><a class='mainlink' href='#doing'><span>Doing</span><span>hobby code</span></a></li>
+                                    <li><a class='mainlink' href='#being'><span>Being</span><span>bio</span></a></li>
+                                    <li><a class='mainlink' href='#thinking'><span>Thinking</span><span>daftness</span></a></li>
+                                    <li><a class='mainlink' href='#liking'><span>Using</span><span>favourites</span></a></li>
+                                    <li><a class='mainlink' href='#using'><span>Trying</span><span>experiments</span></a></li>
+                                </ul>
+                            </nav>
+                        </label>
+                    </div>
+                    <div class="pagetitle terminal">Conrad Jackson</div>
+                </div>
+            </header>
             <section id='contact' class='bg8'>
                 <div class='content'>
                     <h1>Contact</h1>
@@ -303,6 +313,7 @@
                     <li>Replace G+ with something better</li>
                     <li>One day maybe tidy it all up, especially the css organisation. One day.</li>
                     <li>Break out sections into separate files and build.</li>
+                    <li>More things I like and links</li>
                 </ul>
             </section>
         </div>

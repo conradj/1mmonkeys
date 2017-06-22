@@ -3,16 +3,18 @@ body {
     line-height: 1.5;
 }
 
-@media (min-width: 50em) {
+@media (max-width: 500px) {
     body {
-        font-size: 3vw;
-        line-height: 1.5;
+        font-size: 4.5vw;
     }
 }
 
 section {
+    padding-top: 1em;
+    padding-bottom: 1em;
     padding-left: 2.5em;
     padding-right: 2.5em;
+
 }
 
 p, li {
@@ -20,6 +22,11 @@ p, li {
     line-height: 1.5em;
     margin: 1.5em 0;
 }
+
+.listicle li {
+    margin: 2em 0;
+}
+
 h1 {
     font-size:  2em; /* equiv 24px */
     line-height: 1.5em;

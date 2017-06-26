@@ -1,11 +1,19 @@
 body {
     font-size: 3.5vw;
-    line-height: 1.5;
+    line-height: 1.5em;
+}
+
+@media (min-width: 1200px) {
+    body {
+        font-size: 3vw;
+        line-height: 1em;
+    }
 }
 
 @media (max-width: 500px) {
     body {
         font-size: 4.5vw;
+        line-height: 1em;
     }
 }
 

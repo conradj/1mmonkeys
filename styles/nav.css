@@ -78,8 +78,8 @@ nav ul li .mainlink {
     .burger label > nav {
         opacity: 1;
         transition: 1s;
-        width: 50vw;
-        left: -50vw;
+        width: 33vw;
+        left: -33vw;
         transition: all .5s ease;
     }
 
@@ -108,7 +108,16 @@ nav ul li .mainlink {
     }
 
     nav ul li {
-        font-size: 1.5em;
+        font-size: 1em;
+        border-top: 1px solid #333;
+    }
+
+    nav ul li a {
+        border-left: 1em solid rgba(18, 217, 36, 0.5);
+    }
+
+    nav ul li a.mainlink:hover {
+        border-left: 1em solid rgba(18, 217, 36, 1);
     }
     
     .mobilebar {
@@ -127,8 +136,7 @@ nav ul li .mainlink {
         }
 
         .pagetitle {
-            margin-top: 0.3em;
-            margin-left: 0.5em;
+            line-height: 2em;
             font-size: 2em;
             flex: 1;
             display: block;

@@ -17,6 +17,28 @@
         <script src="https://use.fontawesome.com/f3995b1f69.js"></script>
     </head>
     <body>
+        <header>
+            <div class="mobilebar">
+                <div class='burger'>
+                    <input type='checkbox' id='btnBurger'/>
+                    <label id='menu-button' class='btn' for='btnBurger'>
+                        <i class="fa fa-bars fa-border" aria-hidden="true"></i>
+                        <nav class="aligner-item aligner-item--top mono">
+                            <ul class='nav-menu'>
+                                <li class='homelink'><a class='mainlink primary' href='#top'><span>CJ</span><span>moi</span></a></li>
+                                <li class='long'><a class='mainlink' href='#contact'><span>Connecting</span><span>contact</span></a></li>
+                                <li><a class='mainlink' href='#doing'><span>Doing</span><span>hobby code</span></a></li>
+                                <li><a class='mainlink' href='#being'><span>Being</span><span>bio</span></a></li>
+                                <li><a class='mainlink' href='#thinking'><span>Thinking</span><span>daftness</span></a></li>
+                                <li><a class='mainlink' href='#liking'><span>Using</span><span>favourites</span></a></li>
+                                <li><a class='mainlink' href='#using'><span>Trying</span><span>experiments</span></a></li>
+                            </ul>
+                        </nav>
+                    </label>
+                </div>
+                <div class="pagetitle terminal">Conrad Jackson</div>
+            </div>
+        </header>
         <div class="container">
             <section class='home'>
                 <div class='content'>
@@ -35,28 +57,6 @@
                     </div>
                 </div>    
             </section>
-            <header>
-                <div class="mobilebar">
-                    <div class='burger'>
-                        <input type='checkbox' id='btnBurger'/>
-                        <label class='btn' for='btnBurger'>
-                            <i class="fa fa-bars fa-border" aria-hidden="true"></i>
-                            <nav class="aligner-item aligner-item--top mono">
-                                <ul class='nav-menu'>
-                                    <li class='homelink'><a class='mainlink primary' href='#top'><span>CJ</span><span>moi</span></a></li>
-                                    <li class='long'><a class='mainlink' href='#contact'><span>Connecting</span><span>contact</span></a></li>
-                                    <li><a class='mainlink' href='#doing'><span>Doing</span><span>hobby code</span></a></li>
-                                    <li><a class='mainlink' href='#being'><span>Being</span><span>bio</span></a></li>
-                                    <li><a class='mainlink' href='#thinking'><span>Thinking</span><span>daftness</span></a></li>
-                                    <li><a class='mainlink' href='#liking'><span>Using</span><span>favourites</span></a></li>
-                                    <li><a class='mainlink' href='#using'><span>Trying</span><span>experiments</span></a></li>
-                                </ul>
-                            </nav>
-                        </label>
-                    </div>
-                    <div class="pagetitle terminal">Conrad Jackson</div>
-                </div>
-            </header>
             <section id='contact' class='bg8'>
                 <div class='content'>
                     <h1>Contact</h1>
@@ -333,6 +333,13 @@
                 ga('create', 'UA-101404147-1', 'auto');
                 ga('send', 'pageview');
             }
+
+            document.addEventListener('DOMContentLoaded', function () {
+                function menuSlide(e) {
+                    document.querySelector('.container').classList.toggle("container-menu-on", !e.target.checked);
+                }
+                document.querySelector('#btnBurger').addEventListener('change', menuSlide);
+            });
         </script>
     </body>
 </html>

@@ -47,6 +47,16 @@ nav ul .homelink {
     display: none;
 }
 
+.container {
+    transition: all 0.75s ease-out;
+}
+
+.container-menu-on {
+    left: 33vw;
+    /*width: 67vw;*/
+    transform: translateX(33vw);
+}
+
 
 nav ul li .mainlink {
     
@@ -88,7 +98,7 @@ nav ul li .mainlink {
 
     .burger input[type=checkbox]:checked + label > nav {
         opacity: 1;
-        transform: translateY(-100%);
+        transform: translateX(-100%);
         box-shadow: 3px 0px 1px 0px rgba(0,0,0,0.30);
     }
 

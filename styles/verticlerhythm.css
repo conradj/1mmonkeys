@@ -3,20 +3,6 @@ body {
     line-height: 1.5em;
 }
 
-@media (min-width: 1200px) {
-    body {
-        font-size: 3vw;
-        line-height: 1em;
-    }
-}
-
-@media (max-width: 500px) {
-    body {
-        font-size: 4.5vw;
-        line-height: 1em;
-    }
-}
-
 section {
     padding-top: 1em;
     padding-bottom: 1em;
@@ -69,4 +55,25 @@ h6 {
     font-size:  1.1667em; /* equiv 14px */
     line-height:  1.2857em;
     margin:  2.5714em 0;
+}
+
+@media (min-width: 1200px) {
+    body {
+        font-size: 3vw;
+        line-height: 1em;
+    }
+}
+
+@media (min-width: 1400px) {
+    body {
+        font-size: 2vw;
+        line-height: 0.75em;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        font-size: 4.5vw;
+        line-height: 1em;
+    }
 }

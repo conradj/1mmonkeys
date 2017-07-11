@@ -27,7 +27,8 @@ nav ul li.long {
 }
 
 nav ul .homelink {
-    flex: 1;
+    flex: 0 0 2.5em;
+    background-color: rgb(18, 217, 36);
 }
 
 .mobilebar {
@@ -71,7 +72,7 @@ nav ul li .mainlink {
 @media (max-width: 1000px) {
     .burger i {
         padding: 0.5em;
-        margin: 1em;
+        margin: 0.75em;
         display: block;
     }
  
@@ -80,7 +81,7 @@ nav ul li .mainlink {
         transition: 1s;
         width: 33vw;
         height: 100vh;
-        top: 4em;
+        top: 3.5em;
         transition: all 0.75s ease-out;
         z-index: -1;
     }
@@ -98,7 +99,7 @@ nav ul li .mainlink {
     nav {
         display: block;
         position: fixed;
-        top: 4em;
+        top: 3.5em;
     }
 
     nav ul {
@@ -125,7 +126,7 @@ nav ul li .mainlink {
     
     .mobilebar {
         display: block;
-        height: 4em;
+        height: 3.5em;
         background-color: rgb(255, 51, 51);
         background-color: rgb(18, 217, 36);
         color: white;
@@ -139,11 +140,26 @@ nav ul li .mainlink {
         }
 
         .pagetitle {
-            line-height: 2em;
+            line-height: 1.75em;
             font-size: 2em;
             flex: 1;
             display: block;
             /*text-shadow: -1px -1px 0px rgb(10, 93, 0), 1px 1px 0px rgb(57, 189, 24);
             color: rgb(56, 255, 74);*/
         }
+}
+
+@media (max-height: 500px) {
+    header {
+        position: relative;
+    }
+
+    section,
+    .bg4 {
+        background-position: left 0px top 0em;
+    }
+
+    nav {
+        bottom: 0px;
+    }
 }

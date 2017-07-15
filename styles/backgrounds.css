@@ -8,14 +8,22 @@
 .bg2 {
     background-color: rgb(39, 40, 34);
 }
+
 .bg3 {
     background-color: rgb(39, 40, 34);
-    padding-left: 3em;
-    padding-right: 4em;
+    padding-left: 1em;
+    padding-right: 1.5em;
 }
 
-.bg3 h1 {
-    padding-left: 1em;
+    .bg3 h1 {
+        padding-left: 1em;
+    }
+
+@media (min-width: 500px) {
+    .bg3 {
+        padding-left: 3em;
+        padding-right: 4em;
+    }
 }
 
 .bg4 {

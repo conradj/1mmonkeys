@@ -76,4 +76,9 @@ h6 {
         font-size: 4.5vw;
         line-height: 1em;
     }
+
+    section {
+        padding-left: 2.5em;
+        padding-right: 2.5em;
+    }
 }

@@ -3,7 +3,7 @@ section {
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    background-position: left 0px top 1.5em; /*offset for menu*/
+    background-position: left 0px top 0em; /*offset for menu*/
 }
 
 .bg1 {
@@ -21,7 +21,7 @@ section {
 .bg4 {
     /*finger*/
     background-image: url(http://68.media.tumblr.com/tumblr_ldn0pfF8Se1qe0eclo1_r2_500.gif);
-    background-position: right 0px top 1.5em; /*offset for menu, align right for the finger on mobile*/
+    background-position: right 0px top 0em;
 }
 .bg5 {
     /*city*/

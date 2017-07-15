@@ -10,7 +10,14 @@
 }
 .bg3 {
     background-color: rgb(39, 40, 34);
+    padding-left: 3em;
+    padding-right: 4em;
 }
+
+.bg3 h1 {
+    padding-left: 1em;
+}
+
 .bg4 {
     background-color: rgb(39, 40, 34);
 }

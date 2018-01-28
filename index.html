@@ -20,62 +20,61 @@
 
 <body>
     <header>
-        <div class="mobilebar">
-            <div class='burger'>
-                <input type='checkbox' id='btnBurger' />
-                <label id='menu-button' class='btn' for='btnBurger'>
+        <div class="mobilebar" id='menu-bar'>
+            <div id='menu-button' class='burger'>
+                <label class='btn' for='btnBurger'>
                     <i class="fa fa-bars fa-border" aria-hidden="true"></i>
                 </label>
             </div>
             <div class="pagetitle terminal">Conrad Jackson</div>
         </div>
-        <nav class="aligner-item aligner-item--top mono">
-            <ul class='nav-menu'>
-                <li class='homelink'>
-                    <a class='mainlink primary' href='#top'>
-                        <span>CJ</span>
-                        <span>moi</span>
-                    </a>
-                </li>
-                <li class='long'>
-                    <a class='mainlink' href='#contact'>
-                        <span>Connecting</span>
-                        <span>contact</span>
-                    </a>
-                </li>
-                <li>
-                    <a class='mainlink' href='#doing'>
-                        <span>Doing</span>
-                        <span>hobby code</span>
-                    </a>
-                </li>
-                <li>
-                    <a class='mainlink' href='#being'>
-                        <span>Being</span>
-                        <span>bio</span>
-                    </a>
-                </li>
-                <li>
-                    <a class='mainlink' href='#thinking'>
-                        <span>Thinking</span>
-                        <span>daftness</span>
-                    </a>
-                </li>
-                <li>
-                    <a class='mainlink' href='#liking'>
-                        <span>Using</span>
-                        <span>favourites</span>
-                    </a>
-                </li>
-                <li>
-                    <a class='mainlink' href='#using'>
-                        <span>Trying</span>
-                        <span>experiments</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
     </header>
+    <nav class="aligner-item aligner-item--top mono">
+        <ul class='nav-menu'>
+            <li class='homelink'>
+                <a class='mainlink primary' href='#top'>
+                    <span>CJ</span>
+                    <span>moi</span>
+                </a>
+            </li>
+            <li class='long'>
+                <a class='mainlink' href='#contact'>
+                    <span>Connecting</span>
+                    <span>contact</span>
+                </a>
+            </li>
+            <li>
+                <a class='mainlink' href='#doing'>
+                    <span>Doing</span>
+                    <span>hobby code</span>
+                </a>
+            </li>
+            <li>
+                <a class='mainlink' href='#being'>
+                    <span>Being</span>
+                    <span>bio</span>
+                </a>
+            </li>
+            <li>
+                <a class='mainlink' href='#thinking'>
+                    <span>Thinking</span>
+                    <span>daftness</span>
+                </a>
+            </li>
+            <li>
+                <a class='mainlink' href='#liking'>
+                    <span>Using</span>
+                    <span>favourites</span>
+                </a>
+            </li>
+            <li>
+                <a class='mainlink' href='#using'>
+                    <span>Trying</span>
+                    <span>experiments</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
     <div class="container">
         <section class='home'>
             <div class='content'>
@@ -510,7 +509,8 @@
         <section class=''>
             <h1>NOTES</h1>
             <p>Nobody will be reading this far down.</p>
-            <p>I wonder how far can I get with no js, no build steps, no css preprocessor?</p>
+            <p>I wonder how far can I get with
+                <s>no js</s>, no build steps, no css preprocessor?</p>
             <h4>/// TODO:</h4>
             <ul>
                 <li>
@@ -567,13 +567,13 @@
             ga('send', 'pageview');
         }
 
+
+
         document.addEventListener('DOMContentLoaded', function () {
             function menuSlide(e) {
-                console.log(3333, e.target.checked);
-                document.querySelector('.container').classList.toggle("container-menu-on", e.target.checked);
-                document.querySelector('nav').classList.toggle("nav-menu-on", !e.target.checked);
+                document.querySelector('nav').classList.toggle("nav-menu-on");
             }
-            document.querySelector('#btnBurger').addEventListener('change', menuSlide);
+            document.querySelector('header').addEventListener('click', menuSlide, true);
         });
     </script>
 </body>

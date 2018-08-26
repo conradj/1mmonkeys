@@ -30,7 +30,7 @@ nav ul li.long {
 
 nav ul .homelink {
   flex: 0 0 2.5em;
-  background-color: rgb(18, 217, 36);
+  /* background-color: rgb(18, 217, 36); */
 }
 
 .mobilebar {
@@ -58,11 +58,27 @@ nav ul .homelink {
   width: 67vw;
   transform: translateX(33vw);
 } */
-
 nav ul li .mainlink {
+  transition: background-color 250ms linear;
+}
+nav ul li .mainlink:after {
+  border-bottom: rgba(34, 34, 34) solid 1px;
 }
 nav ul li .mainlink:hover {
   background-color: rgb(34, 34, 34);
+}
+
+nav ul li .mainlink:after {
+  display: block;
+  content: "";
+  /* border-bottom: rgba(18, 217, 36) solid 1px; */
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+  border-bottom: rgba(18, 217, 36) solid 1px;
+}
+
+nav ul li .mainlink:hover:after {
+  transform: scaleX(1);
 }
 
 nav ul li .mainlink:hover :last-child {

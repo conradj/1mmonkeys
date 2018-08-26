@@ -1,51 +1,55 @@
 .home {
-    background-color: rgb(39, 40, 34);
+  background-color: rgb(39, 40, 34);
+  background-repeat: repeat;
+  background-size: 60px 60px;
+  /* background-image: url("data:image/svg+xml,%3Csvg width='36' height='36' viewBox='0 0 36 36' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M36 0H0v36h36V0zM15.126 2H2v13.126c.367.094.714.24 1.032.428L15.554 3.032c-.188-.318-.334-.665-.428-1.032zM18 4.874V18H4.874c-.094-.367-.24-.714-.428-1.032L16.968 4.446c.318.188.665.334 1.032.428zM22.874 2h11.712L20 16.586V4.874c1.406-.362 2.512-1.468 2.874-2.874zm10.252 18H20v13.126c.367.094.714.24 1.032.428l12.522-12.522c-.188-.318-.334-.665-.428-1.032zM36 22.874V36H22.874c-.094-.367-.24-.714-.428-1.032l12.522-12.522c.318.188.665.334 1.032.428zm0-7.748V3.414L21.414 18h11.712c.362-1.406 1.468-2.512 2.874-2.874zm-18 18V21.414L3.414 36h11.712c.362-1.406 1.468-2.512 2.874-2.874zM4.874 20h11.712L2 34.586V22.874c1.406-.362 2.512-1.468 2.874-2.874z' fill='%2312d924' fill-opacity='0.09' fill-rule='evenodd'/%3E%3C/svg%3E"); */
+  background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 0h2v20H9V0zm25.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm-20 20l1.732 1-10 17.32-1.732-1 10-17.32zM58.16 4.134l1 1.732-17.32 10-1-1.732 17.32-10zm-40 40l1 1.732-17.32 10-1-1.732 17.32-10zM80 9v2H60V9h20zM20 69v2H0v-2h20zm79.32-55l-1 1.732-17.32-10L82 4l17.32 10zm-80 80l-1 1.732-17.32-10L2 84l17.32 10zm96.546-75.84l-1.732 1-10-17.32 1.732-1 10 17.32zm-100 100l-1.732 1-10-17.32 1.732-1 10 17.32zM38.16 24.134l1 1.732-17.32 10-1-1.732 17.32-10zM60 29v2H40v-2h20zm19.32 5l-1 1.732-17.32-10L62 24l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM111 40h-2V20h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zM40 49v2H20v-2h20zm19.32 5l-1 1.732-17.32-10L42 44l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM91 60h-2V40h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM39.32 74l-1 1.732-17.32-10L22 64l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM71 80h-2V60h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM120 89v2h-20v-2h20zm-84.134 9.16l-1.732 1-10-17.32 1.732-1 10 17.32zM51 100h-2V80h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM100 109v2H80v-2h20zm19.32 5l-1 1.732-17.32-10 1-1.732 17.32 10zM31 120h-2v-20h2v20z' fill='%2312d924' fill-opacity='0.14' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
 
 .bg1 {
-    background-color: rgb(39, 40, 34);
+  background-color: rgb(39, 40, 34);
 }
 .bg2 {
-    background-color: rgb(39, 40, 34);
+  background-color: rgb(39, 40, 34);
 }
 
 .bg3 {
-    background-color: rgb(39, 40, 34);
-    padding-left: 0.75em;
-    padding-right: 0.75em;
+  background-color: rgb(39, 40, 34);
+  padding-left: 0.75em;
+  padding-right: 0.75em;
 }
 
-    .bg3 h1 {
-        padding-left: 1em;
-    }
+.bg3 h1 {
+  padding-left: 1em;
+}
 
 @media (min-width: 500px) {
-    .bg3 {
-        padding-left: 3em;
-        padding-right: 4em;
-    }
+  .bg3 {
+    padding-left: 3em;
+    padding-right: 4em;
+  }
 }
 
 .bg4 {
-    background-color: rgb(39, 40, 34);
+  background-color: rgb(39, 40, 34);
 }
 .bg5 {
-    background-color: rgb(39, 40, 34);
+  background-color: rgb(39, 40, 34);
 }
 
 .bg6 {
-    background-color: rgb(39, 40, 34);
-    color: rgba(0, 0, 0, 0.5);
+  background-color: rgb(39, 40, 34);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .bg7 {
-    background-color: rgb(39, 40, 34);
+  background-color: rgb(39, 40, 34);
 }
 
 .bg8 {
-    background-color: rgb(39, 40, 34);
+  background-color: rgb(39, 40, 34);
 }
 
 .bg9 {
-    background-color: rgb(39, 40, 34);
+  background-color: rgb(39, 40, 34);
 }

@@ -1,0 +1,27 @@
+@media (min-width: 1000px) {
+  .intro-fadein h1,
+  .intro-fadein .mainlink:first-child {
+    opacity: 0;
+    animation: showContent 750ms;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes showContent {
+    to {
+      opacity: 1;
+    }
+  }
+
+  .roller-nav {
+    margin-top: -105px;
+    animation: showNav 50ms linear 5500ms;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes showNav {
+    to {
+      margin-top: 0px;
+    }
+  }
+}

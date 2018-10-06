@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>999,999 monkeys typing</title>
+    <title>Conrad Jackson - Experiments & Undesign</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <style>
         @import url('https://fonts.googleapis.com/css?family=Cousine:700|Space+Mono|VT323');
@@ -15,6 +15,8 @@
     <link rel="stylesheet" type="text/css" href="styles/nav.css" />
     <link rel="stylesheet" type="text/css" href="styles/listicle.css" />
     <link rel="stylesheet" type="text/css" href="styles/circle.css" />
+    <link rel="stylesheet" type="text/css" href="styles/roller.css" />
+    <link rel="stylesheet" type="text/css" href="styles/intro.css" />
     <script src="https://use.fontawesome.com/f3995b1f69.js"></script>
 </head>
 
@@ -29,12 +31,29 @@
             <div class="pagetitle terminal">Conrad Jackson</div>
         </div>
     </header>
-    <nav class="aligner-item aligner-item--top mono">
+    <div class="roller-blind">
+        <section class='home roller-home'>
+            <div class='content'>
+                <div class='aligner'>
+                    <div class="aligner-item main clearfix">
+                        <h1 class="title roller-title">CONRAD</h1>
+                    </div>
+                    <div class="aligner-item main clearfix">
+                        <h1 class="title roller-title">JACKSON</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="background-separator">
+            <div class="circle roller-circle"></div>
+        </div>
+    </div>
+    <nav class="aligner-item aligner-item--top mono roller-nav">
         <ul class='nav-menu'>
             <li class='homelink'>
                 <a class='mainlink primary' href='#top'>
                     <span>CJ</span>
-                    <span>moi</span>
+                    <span>self</span>
                 </a>
             </li>
             <li class='long'>
@@ -84,28 +103,8 @@
         </ul>
     </nav>
     <div class="container">
-        <section class='home'>
+        <section id='contact' class='bg8 intro-fadein'>
             <div class='content'>
-                <div class='aligner'>
-                    <div class="aligner-item main clearfix">
-                        <h1 class="title title-r">CONRAD</h1>
-                    </div>
-                    <div class="aligner-item main clearfix">
-                        <div class="circle">
-                            <img style="width:100%; height:100%" src='https://pbs.twimg.com/profile_images/998623172558635012/ncm3KTJE_400x400.jpg' />
-                        </div>
-                    </div>
-                    <div class="aligner-item main clearfix">
-                        <h1 class="title parenthesis">JACKSON
-                            <span>(that's me!)</span>
-                        </h1>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id='contact' class='bg8'>
-            <div class='content'>
-                <h1>Contact</h1>
                 <ul>
                     <li>
                         <a class='mainlink' href='mailto:site@conradj.co.uk' target='_blank'>
@@ -179,7 +178,8 @@
                                     <blockquote>Articles I've read in Pocket</blockquote>
                                     <small>Gatsby.js | GraphQL | React | Pocket api | Wercker | Azure </small>
                                     <br />
-                                    <a class='sublink github' href='https://github.com/conradj/pocket-public-archive' target='_blank'>
+                                    <a class='sublink github' href='https://github.com/conradj/pocket-public-archive'
+                                        target='_blank'>
                                         <i class="fa fa-github" aria-hidden="true"></i>
                                     </a>
                                 </div>
@@ -200,7 +200,8 @@
                                     <a class='sublink github' href='https://github.com/conradj/totterup' target='_blank'>
                                         <i class="fa fa-github" aria-hidden="true"></i>
                                     </a>&nbsp;
-                                    <a class='sublink github' href='https://play.google.com/store/apps/details?id=com.totterup.lifelongleague.app&hl=en' target='_blank'>
+                                    <a class='sublink github' href='https://play.google.com/store/apps/details?id=com.totterup.lifelongleague.app&hl=en'
+                                        target='_blank'>
                                         <i class="fa fa-android" aria-hidden="true"></i>
                                     </a>
                                 </div>
@@ -216,7 +217,8 @@
                                 </a>
                                 <div>
                                     <blockquote>Manage your Rightmove searches in Trello</blockquote>
-                                    <small>Stormpath for Auth | Stripe for billing | Trello api | Node (Express, Jade, Swagger)
+                                    <small>Stormpath for Auth | Stripe for billing | Trello api | Node (Express, Jade,
+                                        Swagger)
                                         | Azure/VSO </small>
                                 </div>
                             </label>
@@ -245,7 +247,8 @@
                                 </a>
                                 <div>
                                     <blockquote>IoT Dashboard, Music Analyser</blockquote>
-                                    <small>Node | Loopback | PostgreSQL | Echonest api | Aurelia | ES2015 | JSPM | Gulp |
+                                    <small>Node | Loopback | PostgreSQL | Echonest api | Aurelia | ES2015 | JSPM | Gulp
+                                        |
                                         Websockets | Azure |</small>
                                     <a class='sublink github' href='https://github.com/conradj/iotserver' target='_blank'>
                                         <i class="fa fa-github" aria-hidden="true"></i>
@@ -331,12 +334,14 @@
                 </h1>
                 <ol class='listicle'>
                     <li>Smartthings app to tell you if your train is late</li>
-                    <li>Reverse Kickstarter (people pledge money against your idea until someone says they will take the
+                    <li>Reverse Kickstarter (people pledge money against your idea until someone says they will take
+                        the
                         money and do it)</li>
                     <li>Some sort of thing to save the news</li>
                     <li>Some sort of thing that saves democracy</li>
                     <li>Some sort of thing that improves social mobility (OutsideIn.com)</li>
-                    <li>Real time Ambient music stream generated from your activities from web usage, wearables and IoT sensors</li>
+                    <li>Real time Ambient music stream generated from your activities from web usage, wearables and IoT
+                        sensors</li>
                     <li>Taxi share</li>
                     <li>Bad driving app</li>
                     <li>Personal proximity warner</li>
@@ -344,15 +349,18 @@
                     <li>AR Running App (chase the sandwich)</li>
                     <li>Road bumps that play a tune if you go over them slowly enough</li>
                     <li>Tin foil clothing brand to protect you from Wifi/Kinect</li>
-                    <li>Toothbrush that changes from grey to a nice bright colour when wet and then back as it dries out.
-                        Try and keep the colour by brushing your teeth regularly. Also reminds you if you brushed your teeth
+                    <li>Toothbrush that changes from grey to a nice bright colour when wet and then back as it dries
+                        out.
+                        Try and keep the colour by brushing your teeth regularly. Also reminds you if you brushed your
+                        teeth
                         this morning or not.</li>
                     <li>An image serving site where you could specify the subject matter, type and size of image:
                         <pre>&lt;img url=”http://pictopics.com/happycat/icon/16/16” /&gt;</pre>
                     </li>
                     <li>IoT automation routines generated via machine learning</li>
                     <li>AI/ML Drone decorators - roofs and high ceilings a speciality! Special Introductory Offer!</li>
-                    <li>Uber for "open" data (data that should/used to be open). Two sided marketplace, use blockchain/ethereum
+                    <li>Uber for "open" data (data that should/used to be open). Two sided marketplace, use
+                        blockchain/ethereum
                         for contracts?</li>
                 </ol>
             </div>
@@ -434,16 +442,23 @@
                 <ul>
                     <li>
                         <a class='mainlink' href='http://technoir.nl/' target='_blank'>
-                            <span>Movie Backgrounds</span>
+                            <span>Movie backgrounds</span>
                             <span>Tech Noir</span>
                         </a>
                     </li>
                     <li>
-                        <a class='mainlink' href='https://livingstills.tumblr.com/' target='_blank'>Nature backgrounds
-                            <span></span>
+                        <a class='mainlink' href='https://livingstills.tumblr.com/' target='_blank'>
+                            <span>Nature backgrounds</span>
                             <span>Living stills</span>
                         </a>
                     </li>
+                    <li>
+                        <a class='mainlink' href='https://www.heropatterns.com/' target='_blank'>
+                            <span>SVG background</span>
+                            <span>Hero Patterns</span>
+                        </a>
+                    </li>
+
                     <li>
                         <a class='mainlink' href='https://tympanus.net' target='_blank'>Tricksy CSS
                             <span></span>
@@ -542,7 +557,8 @@
                 <li>
                     <s>Fix mobile for home screen</s>
                 </li>
-                <li>Stop using external files and cdn it all to sort out the mixed content TLS issue without caning my hosting
+                <li>Stop using external files and cdn it all to sort out the mixed content TLS issue without caning my
+                    hosting
                     bandwidth
                 </li>
                 <li>
@@ -558,12 +574,13 @@
                 <li>Section navigation with smooth scroll (in css only?)</li>
                 <li>Format Ideas section and add more info</li>
                 <li>Fix colours</li>
-                <li>Better picture of me, maybe randomize on click</li>
+                <li><s>Better picture of me, maybe randomize on click</s></li>
                 <li>Less Google like lens</li>
                 <li>
-                    <s>Find that article about verticle spacing and do that.</s>
+                    <s>Find that article about vertical spacing and do that.</s>
                     <small>(It was
-                        <a href="https://zellwk.com/blog/why-vertical-rhythms/" target="_blank">this</a> one, but I also
+                        <a href="https://zellwk.com/blog/why-vertical-rhythms/" target="_blank">this</a> one, but I
+                        also
                         used
                         <a href="https://designmodo.com/vertical-rhythm/" target="_blank">this</a> one)</small>
                 </li>

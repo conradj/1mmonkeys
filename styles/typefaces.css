@@ -1,37 +1,36 @@
 .title {
-    font-family: 'Space Mono', monospace;
-    text-shadow: -1px -1px 0px rgba(0,0,0,0.8), 1px 1px 0px rgba(40,40,40,1);
-    color: #333;
-    line-height: 1em;
+  font-family: "Space Mono", monospace;
+  /* text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.8), 1px 1px 0px rgba(40, 40, 40, 1); */
+  color: #ed1b1b;
+  line-height: 1em;
+  text-align: center;
 }
 
 .title.title-r {
-    text-align: right;
+  text-align: right;
 }
 
 h1 {
-    font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
 }
 
 h1 span {
-    font-size: 0.3em;
+  font-size: 0.3em;
 }
 
 small {
-    font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
 }
 
 .highlight {
-    /*color: rgb(228, 77, 122);*/
-    color: rgba(0,255,0,0.8);
+  /*color: rgb(228, 77, 122);*/
+  color: rgba(0, 255, 0, 0.8);
 }
 
 .mono {
-    font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
 }
 
 .terminal {
-    font-family: 'VT323', monospace;
+  font-family: "VT323", monospace;
 }
-    
-    

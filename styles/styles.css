@@ -1,64 +1,64 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: #333;
+  background-color: #333;
 }
 
 .content {
-    overflow-x: hidden;
-    color: rgb(255, 255, 255);
-    font-family: 'Cousine', monospace;
+  overflow-x: hidden;
+  color: rgb(255, 255, 255);
+  font-family: "Cousine", monospace;
 }
 
 .home {
-    padding-left: 2.5em;
-    padding-right: 2.5em;
+  padding-left: 2.5em;
+  padding-right: 2.5em;
 }
 
 @media (min-width: 1400px) {
-    .home h1 {
-        font-size: 4em;
-    }
+  .home h1 {
+    font-size: 4em;
+  }
 }
 
 @media (max-width: 1000px) {
-    .home {
-        display: none;
-    }
+  .home {
+    display: none;
+  }
 }
 
-    .home .content {
-        padding: 0%;
-        padding-top: 20px;
-        overflow-y: hidden;
-    }
+.home .content {
+  padding: 0%;
+  padding-top: 20px;
+  overflow-y: hidden;
+}
 
-    .home nav a {
-        white-space: nowrap;
-    }
+.home nav a {
+  white-space: nowrap;
+}
 
 .myname {
-    text-align: center;
-    padding-top: 70px;
+  text-align: center;
+  padding-top: 70px;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 .aligner {
-    display: flex;
-    align-items: center;
-    height: 70%;
-    min-height: 70%;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 70%;
+  min-height: 70%;
+  justify-content: center;
 }
 
 .aligner-item {
-    flex: 1 1 100%;
+  flex: 1 1 100%;
 }
 
 .aligner-item--top {
